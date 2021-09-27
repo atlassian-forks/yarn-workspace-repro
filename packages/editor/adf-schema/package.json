@@ -1,0 +1,48 @@
+{
+  "name": "@atlaskit/adf-schema",
+  "version": "19.2.0",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "license": "Apache-2.0",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "module:es2019": "dist/es2019/index.js",
+  "types": "dist/types/index.d.ts",
+  "sideEffects": false,
+  "atlaskit:src": "src/index.ts",
+  "dependencies": {
+    "@atlaskit/editor-tables": "^2.0.0",
+    "@babel/runtime": "^7.0.0",
+    "@types/linkify-it": "^2.0.4",
+    "@types/prosemirror-model": "^1.11.0",
+    "@types/prosemirror-state": "^1.2.0",
+    "css-color-names": "0.0.4",
+    "linkify-it": "^2.0.3",
+    "memoize-one": "^5.1.0",
+    "prosemirror-model": "1.11.0",
+    "prosemirror-transform": "1.2.8"
+  },
+  "devDependencies": {
+    "@atlaskit/editor-json-transformer": "^8.6.0",
+    "@atlaskit/package-16": "^15.4.0",
+    "@atlaskit/package-17": "^3.1.0",
+    "@atlassian/package-127": "^1.0.0",
+    "@types/prosemirror-history": "^1.0.1",
+    "ajv": "^6.12.6",
+    "json-schema-diff-validator": "^0.4.1",
+    "prosemirror-history": "^1.1.3",
+    "prosemirror-state": "1.3.3",
+    "typescript": "3.9.6"
+  },
+  "techstack": {
+    "@atlassian/frontend": {
+      "circular-dependencies": [
+        "file-level"
+      ]
+    }
+  },
+  "peerDependencies": {}
+}

@@ -1,0 +1,1604 @@
+{
+  "name": "@atlaskit/renovate-config",
+  "version": "0.2.9",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "devDependencies": {
+    "@atlaskit/package-2": "*",
+    "bolt": "^0.24.8",
+    "ts-node": "^10.0.0",
+    "typescript": "3.9.6"
+  },
+  "af:exports": {},
+  "renovate-config": {
+    "default": {
+      "extends": [
+        "config:base",
+        "@atlaskit:continuousByTeam"
+      ],
+      "packageRules": [
+        {
+          "groupName": "Atlassian-frontend Scheduled Releases Upgrade",
+          "packageNames": [
+            "@atlaskit/analytics-next",
+            "@atlaskit/legacy-mobile-macros",
+            "@atlaskit/css-reset",
+            "@atlaskit/reduced-ui-pack",
+            "@atlaskit/avatar",
+            "@atlaskit/avatar-group",
+            "@atlaskit/badge",
+            "@atlaskit/banner",
+            "@atlaskit/blanket",
+            "@atlaskit/breadcrumbs",
+            "@atlaskit/button",
+            "@atlaskit/calendar",
+            "@atlaskit/checkbox",
+            "@atlaskit/code",
+            "@atlaskit/comment",
+            "@atlaskit/datetime-picker",
+            "@atlaskit/drawer",
+            "@atlaskit/dropdown-menu",
+            "@atlaskit/droplist",
+            "@atlaskit/ds-lib",
+            "@atlaskit/dynamic-table",
+            "@atlaskit/empty-state",
+            "@atlaskit/feedback-collector",
+            "@atlaskit/field-base",
+            "@atlaskit/field-radio-group",
+            "@atlaskit/field-range",
+            "@atlaskit/field-text",
+            "@atlaskit/field-text-area",
+            "@atlaskit/flag",
+            "@atlaskit/form",
+            "@atlaskit/global-navigation",
+            "@atlaskit/icon",
+            "@atlaskit/icon-file-type",
+            "@atlaskit/icon-object",
+            "@atlaskit/icon-priority",
+            "@atlaskit/inline-dialog",
+            "@atlaskit/inline-edit",
+            "@atlaskit/inline-message",
+            "@atlaskit/input",
+            "@atlaskit/item",
+            "@atlaskit/layer",
+            "@atlaskit/logo",
+            "@atlaskit/lozenge",
+            "@atlaskit/menu",
+            "@atlaskit/modal-dialog",
+            "@atlaskit/motion",
+            "@atlaskit/multi-select",
+            "@atlaskit/navigation-next",
+            "@atlaskit/onboarding",
+            "@atlaskit/page",
+            "@atlaskit/page-header",
+            "@atlaskit/page-layout",
+            "@atlaskit/pagination",
+            "@atlaskit/popper",
+            "@atlaskit/popup",
+            "@atlaskit/portal",
+            "@atlaskit/progress-bar",
+            "@atlaskit/progress-indicator",
+            "@atlaskit/progress-tracker",
+            "@atlaskit/radio",
+            "@atlaskit/range",
+            "@atlaskit/rating",
+            "@atlaskit/section-message",
+            "@atlaskit/select",
+            "@atlaskit/single-select",
+            "@atlaskit/spinner",
+            "@atlaskit/table-tree",
+            "@atlaskit/tabs",
+            "@atlaskit/tag",
+            "@atlaskit/tag-group",
+            "@atlaskit/textarea",
+            "@atlaskit/textfield",
+            "@atlaskit/theme",
+            "@atlaskit/toggle",
+            "@atlaskit/tooltip",
+            "@atlaskit/activity-provider",
+            "@atlaskit/adf-schema",
+            "@atlaskit/adf-utils",
+            "@atlaskit/collab-provider",
+            "@atlaskit/editor-bitbucket-transformer",
+            "@atlaskit/editor-common",
+            "@atlaskit/editor-confluence-transformer",
+            "@atlaskit/editor-core",
+            "@atlaskit/editor-jira-transformer",
+            "@atlaskit/editor-json-transformer",
+            "@atlaskit/editor-markdown-transformer",
+            "@atlaskit/editor-mobile-bridge",
+            "@atlaskit/editor-shared-styles",
+            "@atlaskit/editor-tables",
+            "@atlaskit/embedded-document",
+            "@atlaskit/editor-extension-dropbox",
+            "@atlaskit/prosemirror-input-rules",
+            "@atlaskit/renderer",
+            "@atlassian/search-provider",
+            "@atlaskit/updater-cli",
+            "@atlaskit/date",
+            "@atlaskit/emoji",
+            "@atlaskit/mention",
+            "@atlaskit/reactions",
+            "@atlaskit/status",
+            "@atlaskit/task-decision",
+            "@atlassian/forge-ui-text-renderer",
+            "@atlassian/xen-editor-provider",
+            "@atlaskit/locale",
+            "@atlaskit/width-detector",
+            "@atlaskit/chunkinator",
+            "@atlaskit/media-avatar-picker",
+            "@atlaskit/media-card",
+            "@atlaskit/media-client",
+            "@atlaskit/media-common",
+            "@atlaskit/media-core",
+            "@atlaskit/media-editor",
+            "@atlaskit/media-filmstrip",
+            "@atlaskit/media-image",
+            "@atlaskit/media-picker",
+            "@atlaskit/media-table",
+            "@atlaskit/media-test-helpers",
+            "@atlaskit/media-ui",
+            "@atlaskit/media-viewer",
+            "@atlaskit/smart-card",
+            "@atlaskit/atlassian-navigation",
+            "@atlaskit/side-navigation",
+            "@atlaskit/focused-task-close-account"
+          ],
+          "enabled": true,
+          "excludePackagePatterns": [],
+          "excludePackageNames": [],
+          "reviewers": [
+            "mdejongh",
+            "rbellebon"
+          ]
+        }
+      ]
+    },
+    "disable-other-upgrades": {
+      "packageRules": [
+        {
+          "packagePatterns": "^.*$",
+          "excludePackageNames": [],
+          "groupName": "Negate everything else",
+          "enabled": false
+        }
+      ]
+    },
+    "disable-other-upgrades-except-af": {
+      "packageRules": [
+        {
+          "packagePatterns": "^.*$",
+          "excludePackageNames": [
+            "@atlassian/atlassian-frontend-repo-docs",
+            "@atlaskit/analytics",
+            "@atlaskit/analytics-gas-types",
+            "@atlaskit/analytics-listeners",
+            "@atlaskit/analytics-namespaced-context",
+            "@atlaskit/analytics-viewer",
+            "@atlaskit/mobile-header",
+            "@atlaskit/panel",
+            "@atlassian/pipelines-admin-deployments",
+            "@atlassian/pipelines-admin-integrations",
+            "@atlassian/pipelines-admin-oidc",
+            "@atlassian/pipelines-admin-settings",
+            "@atlassian/pipelines-ssh-keys",
+            "@atlassian/pipelines-editor",
+            "@atlassian/bitbucket-pipelines-filters",
+            "@atlassian/pipelines-metrics",
+            "@atlassian/pipelines-models",
+            "@atlassian/pipelines-runners-management",
+            "@atlassian/pipelines-runners-wizard",
+            "@atlassian/pipelines-status-icon",
+            "@atlassian/pipelines-variables",
+            "@atlassian/pipelines-yml-validator",
+            "@atlassian/bitbucket-reports",
+            "@atlassian/bitbucket-run-pipeline",
+            "@atlassian/billing-document",
+            "@atlassian/cassi-copyable-text",
+            "@atlassian/cassi-salesforce-account-team",
+            "@atlassian/customer-central-graph",
+            "@atlassian/commerce-analytics-web-client-types",
+            "@atlassian/commerce-billing-details",
+            "@atlassian/commerce-billing-history",
+            "@atlassian/commerce-credit-card-base",
+            "@atlassian/commerce-credit-card-ccp",
+            "@atlassian/commerce-credit-card-hams",
+            "@atlassian/commerce-entitlements",
+            "@atlassian/commerce-environment",
+            "@atlassian/commerce-events-atlaskit",
+            "@atlassian/commerce-events-bridge-gasv3-react",
+            "@atlassian/commerce-events-bridge-metal-react",
+            "@atlassian/commerce-events-bridge-sentry-browser-react",
+            "@atlassian/commerce-events-bridge-utils-react",
+            "@atlassian/commerce-events-core-react",
+            "@atlassian/commerce-events-telemetry-breadcrumbs-react",
+            "@atlassian/commerce-events-telemetry-react",
+            "@atlassian/commerce-events-telemetry-transformers-gasv3-react",
+            "@atlassian/commerce-events-telemetry-transformers-metal-react",
+            "@atlassian/commerce-events-telemetry-transformers-sentry-browser-react",
+            "@atlassian/commerce-events-timing-react",
+            "@atlassian/commerce-events-ui-react",
+            "@atlassian/commerce-final-form",
+            "@atlassian/commerce-hams-client",
+            "@atlassian/commerce-layout",
+            "@atlassian/commerce-legal-notes",
+            "@atlassian/commerce-links",
+            "@atlassian/commerce-payment-flow",
+            "@atlassian/commerce-payment-methods",
+            "@atlaskit/commerce-react",
+            "@atlassian/commerce-recaptcha-base",
+            "@atlassian/commerce-recaptcha-hams",
+            "@atlassian/commerce-resultful",
+            "@atlassian/commerce-service-hook",
+            "@atlassian/commerce-telemetry",
+            "@atlassian/commerce-telemetry-clients",
+            "@atlassian/commerce-test-library",
+            "@atlassian/commerce-types",
+            "@atlassian/commerce-ui",
+            "@atlassian/analytics-card",
+            "@atlassian/charts",
+            "@atlassian/embedded-confluence",
+            "@atlassian/experience-tracker",
+            "@atlassian/confluence-monitoring-client",
+            "@atlassian/confluence-space-picker",
+            "@atlaskit/tree",
+            "@atlassian/analytics-bridge",
+            "@atlassian/error-handling",
+            "@atlaskit/eslint-plugin-design-system",
+            "@atlaskit/focus-ring",
+            "@atlaskit/heading",
+            "@atlaskit/tokens",
+            "@atlaskit/visually-hidden",
+            "@atlassian/dragonfruit-component-create-modal",
+            "@atlassian/dragonfruit-field-definitions-context",
+            "@atlassian/dragonfruit-routes",
+            "@atlassian/compass-search-cache",
+            "@atlassian/compass-search-dialog",
+            "@atlaskit/conversation",
+            "@atlassian/editor-referentiality",
+            "@atlaskit/editor-slack-transformer",
+            "@atlaskit/editor-wikimarkup-transformer",
+            "@atlaskit/email-renderer",
+            "@atlassian/synchrony-delta-to-steps",
+            "@atlaskit/pubsub",
+            "@atlaskit/share",
+            "@atlaskit/user-picker",
+            "@atlaskit/util-data-test",
+            "@atlaskit/util-service-support",
+            "@atlaskit/contextual-survey",
+            "@atlassian/forge-confluence-components",
+            "@atlassian/forge-ui",
+            "@atlassian/aux-test-utils",
+            "@atlassian/forge-ui-types",
+            "@atlassian/forge-ui-validator",
+            "@atlassiansox/confluence-free-plan-info-modal",
+            "@atlassian/experimental-react-experiment-framework-2",
+            "@atlassiansox/checklist",
+            "@atlassiansox/confluence-table-tree",
+            "@atlassiansox/cross-flow-api-internals",
+            "@atlassiansox/cross-flow-base-types",
+            "@atlassiansox/cross-flow-component-support",
+            "@atlassiansox/cross-flow-extensions",
+            "@atlassiansox/cross-flow-plugins",
+            "@atlassiansox/cross-flow-react",
+            "@atlassiansox/cross-flow-support",
+            "@atlassiansox/cross-flow-testing",
+            "@atlassian/exposure-events-compressor",
+            "@atlaskit/feature-flag-client",
+            "@atlassiansox/iframe-plugin",
+            "@atlassian/growth-modals",
+            "@atlassian/multi-product-upgrade",
+            "@atlassiansox/nudge-tooltip",
+            "@atlassiansox/origin-tracing",
+            "@atlassian/plans-table",
+            "@atlassiansox/product-store-react",
+            "@atlassiansox/project-pages",
+            "@atlaskit/react-experiment-framework",
+            "@atlassiansox/schedule-timeline",
+            "@atlassian/share-to-slack",
+            "@atlaskit/help",
+            "@atlaskit/help-article",
+            "@atlaskit/help-layout",
+            "@atlaskit/quiz-widget",
+            "@atlaskit/right-side-panel",
+            "@atlassian/text-avatar-editor",
+            "@atlaskit/in-product-testing-sample",
+            "@atlaskit/color-picker",
+            "@atlassian/flow-cli",
+            "@atlassian/jira-portfolio-plan-wizard",
+            "@atlassian/calendar",
+            "@atlassian/jsm-getting-started-panel",
+            "@atlassiansox/analytics-web-client",
+            "@atlassiansox/feature-flag-web-client",
+            "@atlassian/mpt-analytics",
+            "@atlassian/mpt-app-context",
+            "@atlassian/mpt-app-migration",
+            "@atlassian/mpt-app-preflight-checks",
+            "@atlassian/mpt-cards",
+            "@atlassian/mpt-choose-to-migrate-apps",
+            "@atlassian/mpt-collapsible",
+            "@atlassian/mpt-container-selection",
+            "@atlassian/mpt-elements",
+            "@atlassian/mpt-focus-page",
+            "@atlassian/mpt-home",
+            "@atlassian/mpt-how-it-works",
+            "@atlassian/mpt-migration-details",
+            "@atlassian/mpt-legal-opt-in",
+            "@atlassian/mpt-marketplace-search-dropdown",
+            "@atlassian/mpt-migration-progress",
+            "@atlassian/mpt-need-help-button",
+            "@atlassian/mpt-progress-status",
+            "@atlassian/mpt-utils",
+            "@atlassian/mpt-plan-configuration",
+            "@atlassian/mpt-radio-label",
+            "@atlassian/mpt-timeago",
+            "@atlaskit/code-insights",
+            "@atlaskit/codemod-cli",
+            "@atlaskit/codemod-utils",
+            "@atlaskit/dependency-version-analytics",
+            "@atlaskit/renovate-config",
+            "@atlaskit/atlassian-notifications",
+            "@atlaskit/atlassian-switcher",
+            "@atlaskit/atlassian-switcher-test-utils",
+            "@atlassian/switcher-vanilla",
+            "@atlaskit/notification-indicator",
+            "@atlassian/notification-list",
+            "@atlaskit/notification-log-client",
+            "@atlassian/integrations-survey",
+            "@atlassian/invite-people",
+            "@atlassian/invite-people-drawer",
+            "@atlassian/people-menu",
+            "@atlassian/people-teams",
+            "@atlaskit/profilecard",
+            "@atlassian/ptc-test-utils",
+            "@atlassian/team-work",
+            "@atlassian/browser-metrics",
+            "@atlassian/componentlab",
+            "@atlassian/react-render-analyzer",
+            "@atlassian/proforma-common-core",
+            "@atlassian/proforma-form-builder",
+            "@atlassian/proforma-header-actions",
+            "@atlassian/proforma-jira-form-builder",
+            "@atlassian/proforma-jira-portal-create",
+            "@atlassian/proforma-project-forms",
+            "@atlassian/proforma-translations",
+            "@atlassian/product-search-dialog",
+            "@atlaskit/quick-search",
+            "@atlassian/search-dialog",
+            "@atlassian/heartbeat",
+            "@atlaskit/container-picker",
+            "@atlassian/smart-select",
+            "@atlassian/flags-provider",
+            "@atlassian/help-pointer",
+            "@atlaskit/outbound-auth-flow-client",
+            "@atlassian/eslint-plugin-tangerine",
+            "@atlassian/eslint-resolver-plugin-tangerine",
+            "@atlassian/eslint-utils",
+            "@atlassian/frontend-docs",
+            "@atlassian/frontend-techstack",
+            "@atlassian/stricter-plugin-tangerine",
+            "@atlassian/stricter-plugin-techstack",
+            "@atlassian/techstack-runtime",
+            "@atlassian/sentry-ownership",
+            "@atlassian/redash-toolbelt",
+            "@atlassian/atlassian-frontend-prettier-config",
+            "@atlaskit/analytics-next",
+            "@atlaskit/legacy-mobile-macros",
+            "@atlaskit/css-reset",
+            "@atlaskit/reduced-ui-pack",
+            "@atlaskit/avatar",
+            "@atlaskit/avatar-group",
+            "@atlaskit/badge",
+            "@atlaskit/banner",
+            "@atlaskit/blanket",
+            "@atlaskit/breadcrumbs",
+            "@atlaskit/button",
+            "@atlaskit/calendar",
+            "@atlaskit/checkbox",
+            "@atlaskit/code",
+            "@atlaskit/comment",
+            "@atlaskit/datetime-picker",
+            "@atlaskit/drawer",
+            "@atlaskit/dropdown-menu",
+            "@atlaskit/droplist",
+            "@atlaskit/ds-lib",
+            "@atlaskit/dynamic-table",
+            "@atlaskit/empty-state",
+            "@atlaskit/feedback-collector",
+            "@atlaskit/field-base",
+            "@atlaskit/field-radio-group",
+            "@atlaskit/field-range",
+            "@atlaskit/field-text",
+            "@atlaskit/field-text-area",
+            "@atlaskit/flag",
+            "@atlaskit/form",
+            "@atlaskit/global-navigation",
+            "@atlaskit/icon",
+            "@atlaskit/icon-file-type",
+            "@atlaskit/icon-object",
+            "@atlaskit/icon-priority",
+            "@atlaskit/inline-dialog",
+            "@atlaskit/inline-edit",
+            "@atlaskit/inline-message",
+            "@atlaskit/input",
+            "@atlaskit/item",
+            "@atlaskit/layer",
+            "@atlaskit/logo",
+            "@atlaskit/lozenge",
+            "@atlaskit/menu",
+            "@atlaskit/modal-dialog",
+            "@atlaskit/motion",
+            "@atlaskit/multi-select",
+            "@atlaskit/navigation-next",
+            "@atlaskit/onboarding",
+            "@atlaskit/page",
+            "@atlaskit/page-header",
+            "@atlaskit/page-layout",
+            "@atlaskit/pagination",
+            "@atlaskit/popper",
+            "@atlaskit/popup",
+            "@atlaskit/portal",
+            "@atlaskit/progress-bar",
+            "@atlaskit/progress-indicator",
+            "@atlaskit/progress-tracker",
+            "@atlaskit/radio",
+            "@atlaskit/range",
+            "@atlaskit/rating",
+            "@atlaskit/section-message",
+            "@atlaskit/select",
+            "@atlaskit/single-select",
+            "@atlaskit/spinner",
+            "@atlaskit/table-tree",
+            "@atlaskit/tabs",
+            "@atlaskit/tag",
+            "@atlaskit/tag-group",
+            "@atlaskit/textarea",
+            "@atlaskit/textfield",
+            "@atlaskit/theme",
+            "@atlaskit/toggle",
+            "@atlaskit/tooltip",
+            "@atlaskit/activity-provider",
+            "@atlaskit/adf-schema",
+            "@atlaskit/adf-utils",
+            "@atlaskit/collab-provider",
+            "@atlaskit/editor-bitbucket-transformer",
+            "@atlaskit/editor-common",
+            "@atlaskit/editor-confluence-transformer",
+            "@atlaskit/editor-core",
+            "@atlaskit/editor-jira-transformer",
+            "@atlaskit/editor-json-transformer",
+            "@atlaskit/editor-markdown-transformer",
+            "@atlaskit/editor-mobile-bridge",
+            "@atlaskit/editor-shared-styles",
+            "@atlaskit/editor-tables",
+            "@atlaskit/embedded-document",
+            "@atlaskit/editor-extension-dropbox",
+            "@atlaskit/prosemirror-input-rules",
+            "@atlaskit/renderer",
+            "@atlassian/search-provider",
+            "@atlaskit/updater-cli",
+            "@atlaskit/date",
+            "@atlaskit/emoji",
+            "@atlaskit/mention",
+            "@atlaskit/reactions",
+            "@atlaskit/status",
+            "@atlaskit/task-decision",
+            "@atlassian/forge-ui-text-renderer",
+            "@atlassian/xen-editor-provider",
+            "@atlaskit/locale",
+            "@atlaskit/width-detector",
+            "@atlaskit/chunkinator",
+            "@atlaskit/media-avatar-picker",
+            "@atlaskit/media-card",
+            "@atlaskit/media-client",
+            "@atlaskit/media-common",
+            "@atlaskit/media-core",
+            "@atlaskit/media-editor",
+            "@atlaskit/media-filmstrip",
+            "@atlaskit/media-image",
+            "@atlaskit/media-picker",
+            "@atlaskit/media-table",
+            "@atlaskit/media-test-helpers",
+            "@atlaskit/media-ui",
+            "@atlaskit/media-viewer",
+            "@atlaskit/smart-card",
+            "@atlaskit/atlassian-navigation",
+            "@atlaskit/side-navigation",
+            "@atlaskit/focused-task-close-account"
+          ],
+          "groupName": "Negate everything else not coming from atlassian-frontend",
+          "enabled": false
+        }
+      ]
+    },
+    "editor-only": {
+      "packageRules": [
+        {
+          "packagePatterns": "^.*$",
+          "enabled": false
+        },
+        {
+          "packagePatterns": "^@atlaskit/.*",
+          "groupName": "Atlaskit everything else",
+          "excludePackageNames": [
+            "@atlaskit/code",
+            "@atlaskit/mentions",
+            "@atlaskit/emoji",
+            "@atlaskit/renderer",
+            "@atlaskit/smart-card"
+          ],
+          "excludePackagePatterns": [
+            "^@atlaskit/adf-*",
+            "^@atlaskit/editor-*",
+            "^@atlaskit/media-*"
+          ],
+          "enabled": false
+        },
+        {
+          "packageNames": [
+            "@atlaskit/code",
+            "@atlaskit/mentions",
+            "@atlaskit/emoji",
+            "@atlaskit/renderer",
+            "@atlaskit/smart-card"
+          ],
+          "packagePatterns": [
+            "^@atlaskit/adf-*",
+            "^@atlaskit/editor-*",
+            "^@atlaskit/media-*"
+          ],
+          "groupName": "Atlaskit Editor upgrade",
+          "enabled": true
+        }
+      ],
+      "extends": [
+        "config:base"
+      ],
+      "separateMajorMinor": false,
+      "rangeStrategy": "bump",
+      "postUpdateOptions": [
+        "yarnDedupeFewer"
+      ]
+    },
+    "continuousByTeam": {
+      "packageRules": [
+        {
+          "groupName": "AFP: Monorepo",
+          "packageNames": [
+            "@atlassian/atlassian-frontend-repo-docs",
+            "@atlaskit/util-data-test",
+            "@atlaskit/util-service-support",
+            "@atlaskit/code-insights",
+            "@atlaskit/codemod-utils",
+            "@atlaskit/dependency-version-analytics",
+            "@atlaskit/renovate-config",
+            "@atlassian/eslint-plugin-tangerine",
+            "@atlassian/eslint-resolver-plugin-tangerine",
+            "@atlassian/eslint-utils",
+            "@atlassian/frontend-docs",
+            "@atlassian/frontend-techstack",
+            "@atlassian/stricter-plugin-tangerine",
+            "@atlassian/stricter-plugin-techstack",
+            "@atlassian/techstack-runtime",
+            "@atlassian/atlassian-frontend-prettier-config"
+          ],
+          "enabled": true,
+          "excludePackagePatterns": [],
+          "excludePackageNames": [],
+          "reviewers": [
+            "lbatchelor",
+            "lquirke",
+            "mblaszczyk",
+            "mdejongh",
+            "rbellebon",
+            "tkeir"
+          ]
+        },
+        {
+          "groupName": "AFP: App Infrastructure",
+          "packageNames": [
+            "@atlaskit/analytics",
+            "@atlaskit/analytics-gas-types",
+            "@atlaskit/analytics-listeners",
+            "@atlaskit/analytics-namespaced-context",
+            "@atlaskit/analytics-viewer",
+            "@atlassian/analytics-bridge",
+            "@atlassian/flags-provider"
+          ],
+          "enabled": true,
+          "excludePackagePatterns": [],
+          "excludePackageNames": [],
+          "reviewers": [
+            "bschulze",
+            "chan",
+            "jbrown2",
+            "mjones3",
+            "mpuckeridge"
+          ]
+        },
+        {
+          "groupName": "Bitbucket: CoreX",
+          "packageNames": [
+            "@atlaskit/conversation",
+            "@atlaskit/mobile-header",
+            "@atlaskit/panel"
+          ],
+          "enabled": true,
+          "excludePackagePatterns": [],
+          "excludePackageNames": [],
+          "reviewers": [
+            "bgummer",
+            "bhoeting",
+            "ebutler",
+            "pwilliams"
+          ]
+        },
+        {
+          "groupName": "Bitbucket: Amigos",
+          "packageNames": [
+            "@atlassian/pipelines-admin-deployments",
+            "@atlassian/pipelines-admin-integrations",
+            "@atlassian/pipelines-admin-oidc",
+            "@atlassian/pipelines-admin-settings",
+            "@atlassian/pipelines-ssh-keys",
+            "@atlassian/pipelines-editor",
+            "@atlassian/bitbucket-pipelines-filters",
+            "@atlassian/pipelines-metrics",
+            "@atlassian/pipelines-models",
+            "@atlassian/pipelines-runners-management",
+            "@atlassian/pipelines-runners-wizard",
+            "@atlassian/pipelines-status-icon",
+            "@atlassian/pipelines-variables",
+            "@atlassian/pipelines-yml-validator",
+            "@atlassian/bitbucket-reports",
+            "@atlassian/bitbucket-run-pipeline"
+          ],
+          "enabled": true,
+          "excludePackagePatterns": [],
+          "excludePackageNames": [],
+          "reviewers": [
+            "pplewa",
+            "vbapat"
+          ]
+        },
+        {
+          "groupName": "CASSI",
+          "packageNames": [
+            "@atlassian/billing-document",
+            "@atlassian/cassi-copyable-text",
+            "@atlassian/cassi-salesforce-account-team",
+            "@atlassian/customer-central-graph"
+          ],
+          "enabled": true,
+          "excludePackagePatterns": [],
+          "excludePackageNames": [],
+          "reviewers": [
+            "ashrivastava",
+            "rravisankar",
+            "falguni",
+            "mayank",
+            "ksarkar"
+          ]
+        },
+        {
+          "groupName": "Commerce",
+          "packageNames": [
+            "@atlassian/commerce-analytics-web-client-types",
+            "@atlassian/commerce-billing-details",
+            "@atlassian/commerce-billing-history",
+            "@atlassian/commerce-credit-card-base",
+            "@atlassian/commerce-credit-card-ccp",
+            "@atlassian/commerce-credit-card-hams",
+            "@atlassian/commerce-entitlements",
+            "@atlassian/commerce-environment",
+            "@atlassian/commerce-events-atlaskit",
+            "@atlassian/commerce-events-bridge-gasv3-react",
+            "@atlassian/commerce-events-bridge-metal-react",
+            "@atlassian/commerce-events-bridge-sentry-browser-react",
+            "@atlassian/commerce-events-bridge-utils-react",
+            "@atlassian/commerce-events-core-react",
+            "@atlassian/commerce-events-telemetry-breadcrumbs-react",
+            "@atlassian/commerce-events-telemetry-react",
+            "@atlassian/commerce-events-telemetry-transformers-gasv3-react",
+            "@atlassian/commerce-events-telemetry-transformers-metal-react",
+            "@atlassian/commerce-events-telemetry-transformers-sentry-browser-react",
+            "@atlassian/commerce-events-timing-react",
+            "@atlassian/commerce-events-ui-react",
+            "@atlassian/commerce-final-form",
+            "@atlassian/commerce-hams-client",
+            "@atlassian/commerce-layout",
+            "@atlassian/commerce-legal-notes",
+            "@atlassian/commerce-links",
+            "@atlassian/commerce-payment-flow",
+            "@atlassian/commerce-payment-methods",
+            "@atlaskit/commerce-react",
+            "@atlassian/commerce-recaptcha-base",
+            "@atlassian/commerce-recaptcha-hams",
+            "@atlassian/commerce-resultful",
+            "@atlassian/commerce-service-hook",
+            "@atlassian/commerce-telemetry",
+            "@atlassian/commerce-telemetry-clients",
+            "@atlassian/commerce-test-library",
+            "@atlassian/commerce-types",
+            "@atlassian/commerce-ui"
+          ],
+          "enabled": true,
+          "excludePackagePatterns": [],
+          "excludePackageNames": [],
+          "reviewers": [
+            "akorzunov",
+            "mpazik",
+            "dcastanocastiblanco",
+            "pshaw",
+            "pllanos",
+            "hedgepigdaniel-atlassian"
+          ]
+        },
+        {
+          "groupName": "Confluence Analytics",
+          "packageNames": [
+            "@atlassian/analytics-card"
+          ],
+          "enabled": true,
+          "excludePackagePatterns": [],
+          "excludePackageNames": [],
+          "reviewers": [
+            "parora",
+            "aawchat",
+            "gmenard",
+            "jgalea",
+            "kselladurai",
+            "kharriger",
+            "sdemontfort",
+            "awu"
+          ]
+        },
+        {
+          "groupName": "Confluence Delorean",
+          "packageNames": [
+            "@atlassian/charts"
+          ],
+          "enabled": true,
+          "excludePackagePatterns": [],
+          "excludePackageNames": [],
+          "reviewers": [
+            "ahixon",
+            "smalkireddy",
+            "egui",
+            "lwang4",
+            "megan",
+            "ele",
+            "zverrilli"
+          ]
+        },
+        {
+          "groupName": "Confluence Better Together",
+          "packageNames": [
+            "@atlassian/embedded-confluence"
+          ],
+          "enabled": true,
+          "excludePackagePatterns": [],
+          "excludePackageNames": [],
+          "reviewers": [
+            "clawu",
+            "djadhav",
+            "dzhang2",
+            "jzhou2",
+            "jzhu2",
+            "nkalekar",
+            "sbajaj2"
+          ]
+        },
+        {
+          "groupName": "Confluence Performance and Platform",
+          "packageNames": [
+            "@atlassian/experience-tracker",
+            "@atlassian/confluence-monitoring-client"
+          ],
+          "enabled": true,
+          "excludePackagePatterns": [],
+          "excludePackageNames": [],
+          "reviewers": [
+            "agoel",
+            "brizvash",
+            "cdu",
+            "hmehta",
+            "lmarinov",
+            "mdean2",
+            "rading",
+            "rarkhipau",
+            "rwu",
+            "jhorsley",
+            "dcook2",
+            "dkalidindi",
+            "gjohnson",
+            "kwong4",
+            "mkulinski",
+            "pbhatt",
+            "schebykin",
+            "tclay"
+          ]
+        },
+        {
+          "groupName": "Confluence Discovery & Organization",
+          "packageNames": [
+            "@atlaskit/tree"
+          ],
+          "enabled": true,
+          "excludePackagePatterns": [],
+          "excludePackageNames": [],
+          "reviewers": [
+            "adildy",
+            "ejoun",
+            "hfan",
+            "jpaladin",
+            "jbrunson",
+            "nbourlier",
+            "tmarra",
+            "vhuynh2",
+            "ypatkin"
+          ]
+        },
+        {
+          "groupName": "Forge UI",
+          "packageNames": [
+            "@atlassian/confluence-space-picker",
+            "@atlassian/forge-confluence-components",
+            "@atlassian/forge-ui",
+            "@atlassian/aux-test-utils",
+            "@atlassian/forge-ui-types",
+            "@atlassian/forge-ui-validator"
+          ],
+          "enabled": true,
+          "excludePackagePatterns": [],
+          "excludePackageNames": [],
+          "reviewers": [
+            "amerces",
+            "dwinter",
+            "jshe",
+            "kchan",
+            "nhur",
+            "pgleeson",
+            "pyu",
+            "rbraganza",
+            "ssmyth",
+            "vcapuano",
+            "xcaron"
+          ]
+        },
+        {
+          "groupName": "Jira Frontend Platform",
+          "packageNames": [
+            "@atlassian/error-handling",
+            "@atlassian/flow-cli",
+            "@atlassian/heartbeat"
+          ],
+          "enabled": true,
+          "excludePackagePatterns": [],
+          "excludePackageNames": [],
+          "reviewers": [
+            "ashpakov",
+            "vchan",
+            "mheinz",
+            "sshaw2",
+            "sprentice",
+            "lzhang4"
+          ]
+        },
+        {
+          "groupName": "Design System Team",
+          "packageNames": [
+            "@atlaskit/eslint-plugin-design-system",
+            "@atlaskit/focus-ring",
+            "@atlaskit/heading",
+            "@atlaskit/tokens",
+            "@atlaskit/visually-hidden",
+            "@atlaskit/codemod-cli"
+          ],
+          "enabled": true,
+          "excludePackagePatterns": [],
+          "excludePackageNames": [],
+          "reviewers": [
+            "acampbell3",
+            "achi",
+            "ahinds",
+            "areardon",
+            "ddelcore",
+            "dwarn",
+            "gsouthern",
+            "isriharsha",
+            "jlorusso",
+            "mcharlton",
+            "mdougall",
+            "mxiao",
+            "scurtis",
+            "stoon"
+          ]
+        },
+        {
+          "groupName": "Compass Crux",
+          "packageNames": [
+            "@atlassian/dragonfruit-component-create-modal",
+            "@atlassian/dragonfruit-field-definitions-context"
+          ],
+          "enabled": true,
+          "excludePackagePatterns": [],
+          "excludePackageNames": [],
+          "reviewers": [
+            "hkuan",
+            "jgrose",
+            "rliang",
+            "zjaramillo",
+            "zrichmond"
+          ]
+        },
+        {
+          "groupName": "Compass Frontend",
+          "packageNames": [
+            "@atlassian/dragonfruit-routes"
+          ],
+          "enabled": true,
+          "excludePackagePatterns": [],
+          "excludePackageNames": [],
+          "reviewers": [
+            "jgrose",
+            "sberry",
+            "zjaramillo"
+          ]
+        },
+        {
+          "groupName": "Compass Lodestone",
+          "packageNames": [
+            "@atlassian/compass-search-cache",
+            "@atlassian/compass-search-dialog"
+          ],
+          "enabled": true,
+          "excludePackagePatterns": [],
+          "excludePackageNames": [],
+          "reviewers": [
+            "dphan2",
+            "pshkleinik",
+            "mhossain",
+            "kcornn",
+            "bkrig"
+          ]
+        },
+        {
+          "groupName": "Editor",
+          "packageNames": [
+            "@atlassian/editor-referentiality",
+            "@atlassian/synchrony-delta-to-steps",
+            "@atlassian/redash-toolbelt"
+          ],
+          "enabled": true,
+          "excludePackagePatterns": [],
+          "excludePackageNames": [],
+          "reviewers": [
+            "astaker",
+            "dmorales",
+            "hroberts",
+            "hzou",
+            "jquintana",
+            "kstoyanova",
+            "psuthar",
+            "ptatarenko",
+            "rnabi",
+            "rsejas",
+            "rvieira",
+            "slewis",
+            "srazali",
+            "ssysoev",
+            "tewens",
+            "thor",
+            "who",
+            "wnguyen"
+          ]
+        },
+        {
+          "groupName": "ADF Systems",
+          "packageNames": [
+            "@atlaskit/editor-slack-transformer",
+            "@atlaskit/editor-wikimarkup-transformer",
+            "@atlaskit/email-renderer"
+          ],
+          "enabled": true,
+          "excludePackagePatterns": [],
+          "excludePackageNames": [],
+          "reviewers": [
+            "jminarik",
+            "jloh",
+            "jday",
+            "npickworth",
+            "jxie"
+          ]
+        },
+        {
+          "groupName": "Activity Platform",
+          "packageNames": [
+            "@atlaskit/pubsub",
+            "@atlaskit/atlassian-notifications",
+            "@atlassian/switcher",
+            "@atlassian/switcher-test-utils",
+            "@atlassian/switcher-vanilla",
+            "@atlaskit/notification-indicator",
+            "@atlassian/notification-list",
+            "@atlaskit/notification-log-client"
+          ],
+          "enabled": true,
+          "excludePackagePatterns": [],
+          "excludePackageNames": [],
+          "reviewers": [
+            "mdao",
+            "jmaloney",
+            "aoshannessy"
+          ]
+        },
+        {
+          "groupName": "People and Teams Collective",
+          "packageNames": [
+            "@atlaskit/share",
+            "@atlassian/people-menu",
+            "@atlassian/people-teams",
+            "@atlaskit/profilecard",
+            "@atlassian/ptc-test-utils",
+            "@atlassian/team-work"
+          ],
+          "enabled": true,
+          "excludePackagePatterns": [],
+          "excludePackageNames": [],
+          "reviewers": [
+            "asalinovic",
+            "esoares",
+            "isomasiri",
+            "jprado",
+            "ltran",
+            "nhiebl",
+            "tthanhdang"
+          ]
+        },
+        {
+          "groupName": "Search & Smarts: Smart Experience",
+          "packageNames": [
+            "@atlaskit/user-picker",
+            "@atlaskit/container-picker",
+            "@atlassian/smart-select"
+          ],
+          "enabled": true,
+          "excludePackagePatterns": [],
+          "excludePackageNames": [],
+          "reviewers": [
+            "kkijak",
+            "awondo",
+            "erho",
+            "hye",
+            "sang",
+            "mnebl",
+            "kmolloy",
+            "ooldfieldhodge"
+          ]
+        },
+        {
+          "groupName": "Personalization",
+          "packageNames": [
+            "@atlaskit/contextual-survey"
+          ],
+          "enabled": true,
+          "excludePackagePatterns": [],
+          "excludePackageNames": [],
+          "reviewers": [
+            "spantham",
+            "jdurand",
+            "jshi",
+            "uacharya"
+          ]
+        },
+        {
+          "groupName": "Growth: Crossflow",
+          "packageNames": [
+            "@atlassiansox/confluence-free-plan-info-modal",
+            "@atlassiansox/confluence-table-tree",
+            "@atlassiansox/cross-flow-api-internals",
+            "@atlassiansox/cross-flow-base-types",
+            "@atlassiansox/cross-flow-component-support",
+            "@atlassiansox/cross-flow-extensions",
+            "@atlassiansox/cross-flow-plugins",
+            "@atlassiansox/cross-flow-react",
+            "@atlassiansox/cross-flow-support",
+            "@atlassiansox/cross-flow-testing",
+            "@atlassiansox/iframe-plugin",
+            "@atlassiansox/product-store-react",
+            "@atlassiansox/project-pages",
+            "@atlassiansox/schedule-timeline"
+          ],
+          "enabled": true,
+          "excludePackagePatterns": [],
+          "excludePackageNames": [],
+          "reviewers": [
+            "rbruniges",
+            "dwatson",
+            "dchukhai",
+            "gsgritta",
+            "lhunt",
+            "thuynh2",
+            "zng",
+            "jthomas5",
+            "bwaite",
+            "iflores",
+            "jzhou",
+            "mrozen",
+            "phall",
+            "swang2",
+            "ylim",
+            "mtruong",
+            "doverlock",
+            "gbolloch",
+            "isu",
+            "mmaradiaga",
+            "rturnbull",
+            "yzhao"
+          ]
+        },
+        {
+          "groupName": "Growth: Groot",
+          "packageNames": [
+            "@atlassian/experimental-react-experiment-framework-2",
+            "@atlassiansox/origin-tracing",
+            "@atlaskit/react-experiment-framework",
+            "@atlassian/invite-people",
+            "@atlassian/invite-people-drawer"
+          ],
+          "enabled": true,
+          "excludePackagePatterns": [],
+          "excludePackageNames": [],
+          "reviewers": [
+            "briosa",
+            "jfield",
+            "jbyler",
+            "kcabazares",
+            "mkobierski",
+            "milavsky",
+            "rdutra",
+            "sbettini",
+            "ygozman",
+            "nmalecki",
+            "dwalker2",
+            "adacosta",
+            "asayam",
+            "bswierczynski",
+            "dferreira",
+            "fchan",
+            "klad",
+            "mmajchrzak",
+            "mng",
+            "jtran"
+          ]
+        },
+        {
+          "groupName": "Growth: New User Experience",
+          "packageNames": [
+            "@atlassiansox/checklist",
+            "@atlassiansox/nudge-tooltip"
+          ],
+          "enabled": true,
+          "excludePackagePatterns": [],
+          "excludePackageNames": [],
+          "reviewers": [
+            "bgiraldo",
+            "vmarkov",
+            "psia",
+            "tcrane",
+            "bmartinez",
+            "mwarneke",
+            "ashakiba",
+            "mdesouza",
+            "dyang",
+            "tweinstein"
+          ]
+        },
+        {
+          "groupName": "Measurement Platform",
+          "packageNames": [
+            "@atlassian/exposure-events-compressor",
+            "@atlaskit/feature-flag-client",
+            "@atlassiansox/analytics-web-client",
+            "@atlassiansox/feature-flag-web-client"
+          ],
+          "enabled": true,
+          "excludePackagePatterns": [],
+          "excludePackageNames": [],
+          "reviewers": [
+            "dhaden",
+            "hchehab",
+            "rsangster",
+            "srahman",
+            "arussell",
+            "cosmotherly",
+            "crobertson",
+            "cyousheyah",
+            "cjoy",
+            "hchow",
+            "jcano",
+            "kpurohit",
+            "opope",
+            "pzhang2"
+          ]
+        },
+        {
+          "groupName": "Growth: Apollo",
+          "packageNames": [
+            "@atlassian/growth-modals",
+            "@atlassian/multi-product-upgrade",
+            "@atlassian/plans-table"
+          ],
+          "enabled": true,
+          "excludePackagePatterns": [],
+          "excludePackageNames": [],
+          "reviewers": [
+            "aagrawal3",
+            "apeterson",
+            "hmehendale",
+            "idelarosa",
+            "jlandaverde",
+            "lcao",
+            "mmichael",
+            "rraede"
+          ]
+        },
+        {
+          "groupName": "Growth: Atlantis",
+          "packageNames": [
+            "@atlassian/share-to-slack"
+          ],
+          "enabled": true,
+          "excludePackagePatterns": [],
+          "excludePackageNames": [],
+          "reviewers": [
+            "staylor3"
+          ]
+        },
+        {
+          "groupName": "In Product Help",
+          "packageNames": [
+            "@atlaskit/help",
+            "@atlaskit/help-article",
+            "@atlaskit/help-layout",
+            "@atlaskit/right-side-panel"
+          ],
+          "enabled": true,
+          "excludePackagePatterns": [],
+          "excludePackageNames": [],
+          "reviewers": [
+            "malvarez2"
+          ]
+        },
+        {
+          "groupName": "Jira Training App",
+          "packageNames": [
+            "@atlaskit/quiz-widget"
+          ],
+          "enabled": true,
+          "excludePackagePatterns": [],
+          "excludePackageNames": [],
+          "reviewers": [
+            "alaktionova",
+            "mkotii"
+          ]
+        },
+        {
+          "groupName": "Identity: Kirby",
+          "packageNames": [
+            "@atlassian/text-avatar-editor"
+          ],
+          "enabled": true,
+          "excludePackagePatterns": [],
+          "excludePackageNames": [],
+          "reviewers": [
+            "jbell2",
+            "dsommerich",
+            "pcowan"
+          ]
+        },
+        {
+          "groupName": "Editor Media",
+          "packageNames": [
+            "@atlaskit/in-product-testing-sample"
+          ],
+          "enabled": true,
+          "excludePackagePatterns": [],
+          "excludePackageNames": [],
+          "reviewers": [
+            "abhayani",
+            "akishore",
+            "amotsjonov",
+            "bgeng",
+            "cosmotherly",
+            "hzarcogarcia",
+            "pjukic",
+            "plai",
+            "rmckinnon",
+            "sxu",
+            "tli",
+            "vsutrave",
+            "jcoppinger",
+            "wyoosthaporn"
+          ]
+        },
+        {
+          "groupName": "Jira Software: Roadmaps",
+          "packageNames": [
+            "@atlaskit/color-picker"
+          ],
+          "enabled": true,
+          "excludePackagePatterns": [],
+          "excludePackageNames": [],
+          "reviewers": [
+            "akavelar",
+            "cautexier",
+            "dannesley",
+            "hsu",
+            "htaylor",
+            "wloo"
+          ]
+        },
+        {
+          "groupName": "AAIS: Team X",
+          "packageNames": [
+            "@atlassian/jira-portfolio-plan-wizard"
+          ],
+          "enabled": true,
+          "excludePackagePatterns": [],
+          "excludePackageNames": [],
+          "reviewers": [
+            "qbuu",
+            "plai2"
+          ]
+        },
+        {
+          "groupName": "Jira Service Management: Flux",
+          "packageNames": [
+            "@atlassian/calendar"
+          ],
+          "enabled": true,
+          "excludePackagePatterns": [],
+          "excludePackageNames": [],
+          "reviewers": [
+            "cjoseph",
+            "cmann",
+            "hzaheer",
+            "jfurler",
+            "juwong",
+            "ldiniz",
+            "nrobson",
+            "sjhaver",
+            "smalik"
+          ]
+        },
+        {
+          "groupName": "Jira Service Management: Ignition",
+          "packageNames": [
+            "@atlassian/jsm-getting-started-panel"
+          ],
+          "enabled": true,
+          "excludePackagePatterns": [],
+          "excludePackageNames": [],
+          "reviewers": [
+            "npummeroy",
+            "avernon",
+            "ktarasiuk",
+            "jgrigg",
+            "mmatic",
+            "psujono"
+          ]
+        },
+        {
+          "groupName": "Migrations Platform",
+          "packageNames": [
+            "@atlassian/mpt-analytics",
+            "@atlassian/mpt-app-context",
+            "@atlassian/mpt-app-migration",
+            "@atlassian/mpt-app-preflight-checks",
+            "@atlassian/mpt-cards",
+            "@atlassian/mpt-choose-to-migrate-apps",
+            "@atlassian/mpt-collapsible",
+            "@atlassian/mpt-container-selection",
+            "@atlassian/mpt-elements",
+            "@atlassian/mpt-focus-page",
+            "@atlassian/mpt-home",
+            "@atlassian/mpt-how-it-works",
+            "@atlassian/mpt-migration-details",
+            "@atlassian/mpt-legal-opt-in",
+            "@atlassian/mpt-marketplace-search-dropdown",
+            "@atlassian/mpt-migration-progress",
+            "@atlassian/mpt-need-help-button",
+            "@atlassian/mpt-progress-status",
+            "@atlassian/mpt-utils",
+            "@atlassian/mpt-plan-configuration",
+            "@atlassian/mpt-radio-label",
+            "@atlassian/mpt-timeago"
+          ],
+          "enabled": true,
+          "excludePackagePatterns": [],
+          "excludePackageNames": [],
+          "reviewers": [
+            "abonifacio",
+            "dalmeida",
+            "fkarim",
+            "jdang2",
+            "jsebastian",
+            "mkenchugonde"
+          ]
+        },
+        {
+          "groupName": "Agile-Makkuro",
+          "packageNames": [
+            "@atlassian/integrations-survey"
+          ],
+          "enabled": true,
+          "excludePackagePatterns": [],
+          "excludePackageNames": [],
+          "reviewers": [
+            "amoret",
+            "fyasir",
+            "mperzanowski",
+            "snarasimhan",
+            "wkuang"
+          ]
+        },
+        {
+          "groupName": "UIP Frontend Observability",
+          "packageNames": [
+            "@atlassian/browser-metrics"
+          ],
+          "enabled": true,
+          "excludePackagePatterns": [],
+          "excludePackageNames": [],
+          "reviewers": [
+            "mbiniek",
+            "mreis",
+            "etimothy",
+            "cng",
+            "mliu2"
+          ]
+        },
+        {
+          "groupName": "AFP: Dev Infrastructure",
+          "packageNames": [
+            "@atlassian/componentlab"
+          ],
+          "enabled": true,
+          "excludePackagePatterns": [],
+          "excludePackageNames": [],
+          "reviewers": [
+            "agawrys",
+            "bdo",
+            "eeldredge",
+            "gkong",
+            "jslater",
+            "wbinnssmith"
+          ]
+        },
+        {
+          "groupName": "Kirigami",
+          "packageNames": [
+            "@atlassian/react-render-analyzer"
+          ],
+          "enabled": true,
+          "excludePackagePatterns": [],
+          "excludePackageNames": [],
+          "reviewers": [
+            "cturner",
+            "fbordallo",
+            "gmountakis",
+            "pkodmad",
+            "gtaylor",
+            "vzubach"
+          ]
+        },
+        {
+          "groupName": "Jira Service Management: transFORMers",
+          "packageNames": [
+            "@atlassian/proforma-common-core",
+            "@atlassian/proforma-form-builder",
+            "@atlassian/proforma-header-actions",
+            "@atlassian/proforma-jira-form-builder",
+            "@atlassian/proforma-jira-portal-create",
+            "@atlassian/proforma-project-forms",
+            "@atlassian/proforma-translations"
+          ],
+          "enabled": true,
+          "excludePackagePatterns": [],
+          "excludePackageNames": [],
+          "reviewers": [
+            "dma",
+            "gtan",
+            "rcourtney",
+            "sfraye",
+            "ebennett",
+            "chamilton",
+            "cgutjahr",
+            "jkirk",
+            "ohisham"
+          ]
+        },
+        {
+          "groupName": "Search & Smarts: Search Experience",
+          "packageNames": [
+            "@atlassian/product-search-dialog",
+            "@atlaskit/quick-search",
+            "@atlassian/search-dialog"
+          ],
+          "enabled": true,
+          "excludePackagePatterns": [],
+          "excludePackageNames": [],
+          "reviewers": [
+            "cford",
+            "czeng",
+            "mdyer",
+            "pteen",
+            "rmatta"
+          ]
+        },
+        {
+          "groupName": "Team Central",
+          "packageNames": [
+            "@atlassian/help-pointer"
+          ],
+          "enabled": true,
+          "excludePackagePatterns": [],
+          "excludePackageNames": [],
+          "reviewers": [
+            "eoates",
+            "jkurniawan",
+            "nathanflew",
+            "owallhult",
+            "andax"
+          ]
+        },
+        {
+          "groupName": "Ecosystem Capabilities",
+          "packageNames": [
+            "@atlaskit/outbound-auth-flow-client"
+          ],
+          "enabled": true,
+          "excludePackagePatterns": [],
+          "excludePackageNames": [],
+          "reviewers": [
+            "wneto",
+            "aholmgren",
+            "cjohnston2",
+            "ckrishnakumar",
+            "dhreben",
+            "dshuiskyi",
+            "dsorin",
+            "natashbar",
+            "nsher",
+            "pvlasov",
+            "nsultana"
+          ]
+        },
+        {
+          "groupName": "Trello Frontend Platform",
+          "packageNames": [
+            "@atlassian/sentry-ownership"
+          ],
+          "enabled": true,
+          "excludePackagePatterns": [],
+          "excludePackageNames": [],
+          "reviewers": [
+            "cfletcher",
+            "dcruz",
+            "dwalker",
+            "jchung",
+            "kwatkins",
+            "mlozano"
+          ]
+        }
+      ]
+    }
+  },
+  "dependencies": {},
+  "peerDependencies": {}
+}

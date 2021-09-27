@@ -1,0 +1,103 @@
+{
+  "name": "@atlassian/package-205",
+  "version": "2.2.1",
+  "author": "Atlassian Pty Ltd",
+  "publishConfig": {
+    "registry": "https://packages.atlassian.com/api/npm/npm-remote"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "module:es2019": "dist/es2019/index.js",
+  "types": "dist/types/index.d.ts",
+  "sideEffects": false,
+  "atlaskit:src": "src/index.ts",
+  "af:exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@atlaskit/adf-utils": "^14.3.0",
+    "@atlaskit/button": "^16.1.0",
+    "@atlaskit/checkbox": "^12.3.0",
+    "@atlaskit/datetime-picker": "^11.0.0",
+    "@atlaskit/dropdown-menu": "^10.1.6",
+    "@atlaskit/editor-common": "^60.1.0",
+    "@atlaskit/editor-json-transformer": "^8.6.0",
+    "@atlaskit/field-base": "^15.0.4",
+    "@atlaskit/icon": "^21.9.0",
+    "@atlaskit/inline-message": "^11.0.6",
+    "@atlaskit/lozenge": "^11.1.0",
+    "@atlaskit/menu": "^1.1.0",
+    "@atlaskit/modal-dialog": "^12.0.0",
+    "@atlaskit/radio": "^5.3.0",
+    "@atlaskit/section-message": "^6.1.0",
+    "@atlaskit/select": "^15.2.0",
+    "@atlaskit/spinner": "^15.1.0",
+    "@atlaskit/tabs": "^13.2.0",
+    "@atlaskit/textarea": "^4.2.0",
+    "@atlaskit/textfield": "^5.1.0",
+    "@atlaskit/theme": "^12.0.0",
+    "@atlaskit/tooltip": "^17.5.0",
+    "@atlassian/package-204": "^0.29.0",
+    "@atlassian/package-215": "^0.1.6",
+    "@babel/runtime": "^7.0.0",
+    "@types/prosemirror-dropcursor": "^1.0.1",
+    "fuse.js": "^3.4.6",
+    "lodash": "^4.17.15",
+    "prosemirror-dropcursor": "^1.3.2",
+    "prosemirror-history": "^1.1.3",
+    "prosemirror-model": "1.11.0",
+    "prosemirror-state": "1.3.3",
+    "prosemirror-utils": "^1.0.0-0",
+    "prosemirror-view": "1.15.4",
+    "react-beautiful-dnd": "^12.1.1",
+    "react-intl": "^2.6.0",
+    "styled-components": "^3.2.6"
+  },
+  "peerDependencies": {
+    "@atlaskit/editor-core": "^150.0.0",
+    "react": "^16.8.0"
+  },
+  "devDependencies": {
+    "@af/package-27": "^0.13.0",
+    "@atlaskit/package-2": "*",
+    "@atlaskit/package-8": "*",
+    "@atlaskit/package-9": "*",
+    "@atlaskit/package-10": "*",
+    "react-dom": "^16.8.0",
+    "typescript": "3.9.6",
+    "wait-for-expect": "^1.2.0"
+  },
+  "techstackIgnore": {
+    "stricter": [
+      "@atlassian/tangerine/project-structure"
+    ]
+  },
+  "techstack": {
+    "@atlassian/frontend": {
+      "code-structure": [
+        "tangerine-next"
+      ],
+      "import-structure": [
+        "atlassian-conventions"
+      ],
+      "circular-dependencies": [
+        "file-and-folder-level"
+      ]
+    },
+    "@repo/internal": {
+      "analytics": [
+        "analytics-next"
+      ],
+      "theming": [
+        "new-theming-api"
+      ],
+      "ui-components": [
+        "lite-mode"
+      ],
+      "deprecation": [
+        "no-deprecated-imports"
+      ]
+    }
+  }
+}

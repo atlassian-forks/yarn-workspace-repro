@@ -1,0 +1,42 @@
+{
+  "name": "@atlassian/package-75",
+  "version": "1.0.4",
+  "publishConfig": {
+    "registry": "https://packages.atlassian.com/api/npm/npm-remote"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "module:es2019": "dist/es2019/index.js",
+  "types": "dist/types/index.d.ts",
+  "sideEffects": false,
+  "atlaskit:src": "src/index.ts",
+  "dependencies": {
+    "@babel/runtime": "^7.0.0",
+    "@emotion/styled": "^10.0.7"
+  },
+  "peerDependencies": {
+    "@types/jest-axe": "^3.5.0",
+    "jest-axe": "^4.0.0",
+    "react": "^16.8.0"
+  },
+  "devDependencies": {
+    "@atlaskit/package-9": "*",
+    "@testing-library/react": "^8.0.1",
+    "@types/jest-axe": "^3.5.0",
+    "jest-axe": "^4.0.0",
+    "typescript": "3.9.6"
+  },
+  "techstack": {
+    "@atlassian/frontend": {
+      "import-structure": [
+        "atlassian-conventions"
+      ]
+    }
+  },
+  "af:exports": {
+    ".": "./src/index.ts",
+    "./vr": "./src/vr/index.tsx"
+  }
+}

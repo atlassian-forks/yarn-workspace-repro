@@ -1,0 +1,28 @@
+{
+  "name": "@atlassian/package-1",
+  "version": "3.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/atlassian/atlassian-frontend.git"
+  },
+  "publishConfig": {
+    "registry": "https://packages.atlassian.com/api/npm/npm-remote"
+  },
+  "files": [
+    "content/**/*",
+    "data/*"
+  ],
+  "docs": [
+    {
+      "contentDir": "/content/cloud/framework/atlassian-frontend",
+      "publishPath": "/cloud/framework/atlassian-frontend",
+      "srcPath": "/build/repo-docs",
+      "platform": "cloud",
+      "product": "atlassian-frontend",
+      "humanName": "Atlassian Frontend"
+    }
+  ],
+  "devDependencies": {},
+  "dependencies": {},
+  "peerDependencies": {}
+}

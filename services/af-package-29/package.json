@@ -1,0 +1,28 @@
+{
+  "name": "@af/package-29",
+  "version": "1.0.17",
+  "private": true,
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "license": "UNLICENSED",
+  "main": "dist/bundle.js",
+  "source": "src/handler.js",
+  "dependencies": {
+    "@atlaskit/package-2": "^2.7.0",
+    "@atlassian/package-2": "^0.3.0",
+    "aws-sdk": "^2.897.0",
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.14",
+    "@types/node": "~12.0.12",
+    "dynamodb-local": "^0.0.31",
+    "lambda-local": "^1.6.3",
+    "nodemon": "^2.0.2",
+    "rollup": "^1.29.0",
+    "ts-node": "^10.0.0",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "3.9.6"
+  },
+  "peerDependencies": {}
+}

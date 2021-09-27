@@ -1,0 +1,27 @@
+{
+  "name": "@atlassian/package-67",
+  "version": "0.0.1",
+  "publishConfig": {
+    "registry": "https://packages.atlassian.com/api/npm/npm-remote"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "sideEffects": false,
+  "dependencies": {
+    "@babel/runtime": "^7.0.0"
+  },
+  "devDependencies": {
+    "typescript": "3.9.6"
+  },
+  "techstack": {
+    "@atlassian/frontend": {
+      "import-structure": [
+        "atlassian-conventions"
+      ]
+    }
+  },
+  "af:exports": {
+    "./url": "./src/url.ts"
+  },
+  "peerDependencies": {}
+}

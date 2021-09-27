@@ -1,0 +1,39 @@
+{
+  "name": "@atlaskit/package-9",
+  "version": "0.7.5",
+  "main": "index.js",
+  "private": true,
+  "dependencies": {
+    "@atlaskit/package-1": "^1.0.0",
+    "@atlaskit/package-26": "^6.0.0",
+    "@jest/test-result": "^26.6.2",
+    "chalk": "^2.1.0",
+    "docker-compose": "^0.14.5",
+    "glob": "^7.1.2",
+    "ip": "^1.1.5",
+    "is-reachable": "^2.4.0",
+    "jest": "^26.4.2",
+    "jest-image-snapshot": "^4.5.0",
+    "lodash": "^4.17.15",
+    "meow": "^6.0.0",
+    "mkdirp": "^0.5.1",
+    "mockdate": "^3.0.2",
+    "pixelmatch": "^5.2.1",
+    "pngjs": "^5.0.0",
+    "puppeteer": "10.1.0",
+    "read-pkg-up": "^7.0.1",
+    "rimraf": "^2.6.3",
+    "semver": "^7.3.0",
+    "strip-ansi": "^5.2.0",
+    "ts-node": "^10.0.0",
+    "tslib": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/ip": "^1.1.0",
+    "@types/is-reachable": "3.0.0",
+    "@types/pixelmatch": "^5.2.2",
+    "@types/pngjs": "^3.4.2",
+    "@types/request-promise-native": "^1.0.17"
+  },
+  "peerDependencies": {}
+}

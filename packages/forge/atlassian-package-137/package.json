@@ -1,0 +1,31 @@
+{
+  "name": "@atlassian/package-137",
+  "version": "5.16.3",
+  "publishConfig": {
+    "registry": "https://packages.atlassian.com/api/npm/npm-remote"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "module:es2019": "dist/es2019/index.js",
+  "types": "dist/types/index.d.ts",
+  "atlaskit:src": "src/index.tsx",
+  "dependencies": {
+    "@atlassian/package-136": "^24.8.0",
+    "@babel/runtime": "^7.0.0",
+    "fp-ts": "^2.3.1",
+    "io-ts": "^2.0.2"
+  },
+  "devDependencies": {
+    "@atlassian/package-134": "^4.0.0",
+    "@forge/ui": "~0.7.0",
+    "typescript": "3.9.6"
+  },
+  "techstack": {
+    "@atlassian/frontend": {
+      "tree-shaking": []
+    }
+  },
+  "peerDependencies": {}
+}

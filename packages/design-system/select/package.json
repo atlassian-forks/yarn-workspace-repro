@@ -1,0 +1,70 @@
+{
+  "name": "@atlaskit/select",
+  "version": "15.2.2",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "license": "Apache-2.0",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "module:es2019": "dist/es2019/index.js",
+  "types": "dist/types/index.d.ts",
+  "sideEffects": false,
+  "atlaskit:src": "src/index.ts",
+  "dependencies": {
+    "@atlaskit/analytics-next": "^8.2.0",
+    "@atlaskit/icon": "^21.9.0",
+    "@atlaskit/spinner": "^15.0.0",
+    "@atlaskit/theme": "^12.0.0",
+    "@atlaskit/tokens": "^0.2.0",
+    "@babel/runtime": "^7.0.0",
+    "@emotion/core": "^10.0.9",
+    "@popperjs/core": "^2.9.1",
+    "@types/react-select": "^4.0.13",
+    "focus-trap": "^2.4.5",
+    "memoize-one": "^5.1.0",
+    "react-fast-compare": "^2.0.1",
+    "react-node-resolver": "^1.0.1",
+    "react-popper": "^2.2.3",
+    "react-select": "^4.3.1",
+    "react-uid": "^2.2.0",
+    "shallow-equal": "^1.0.0"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "devDependencies": {
+    "@atlaskit/package-2": "*",
+    "@atlaskit/button": "^16.0.0",
+    "@atlaskit/checkbox": "^12.2.0",
+    "@atlaskit/docs": "*",
+    "@atlaskit/drawer": "^7.0.0",
+    "@atlaskit/form": "^8.4.0",
+    "@atlaskit/logo": "^13.5.0",
+    "@atlaskit/modal-dialog": "^12.0.0",
+    "@atlaskit/section-message": "^6.0.0",
+    "@atlaskit/package-8": "*",
+    "@atlaskit/tooltip": "^17.5.0",
+    "@atlaskit/package-9": "*",
+    "@atlaskit/package-10": "*",
+    "@emotion/styled": "^10.0.7",
+    "@testing-library/react": "^8.0.1",
+    "ast-types": "^0.13.3",
+    "enzyme": "^3.10.0",
+    "jscodeshift": "^0.13.0",
+    "react-dom": "^16.8.0",
+    "react-value": "^0.2.0",
+    "typescript": "3.9.6",
+    "wait-for-expect": "^1.2.0"
+  },
+  "techstack": {
+    "@repo/internal": {
+      "theming": "tokens",
+      "deprecation": "no-deprecated-imports"
+    }
+  },
+  "homepage": "https://atlassian.design/components/select/"
+}

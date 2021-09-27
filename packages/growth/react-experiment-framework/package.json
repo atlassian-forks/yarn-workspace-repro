@@ -1,0 +1,27 @@
+{
+  "name": "@atlaskit/react-experiment-framework",
+  "version": "0.7.4",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "license": "Apache-2.0",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "module:es2019": "dist/es2019/index.js",
+  "types": "dist/types/index.d.ts",
+  "atlaskit:src": "src/index.ts",
+  "dependencies": {
+    "@babel/runtime": "^7.0.0"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "devDependencies": {
+    "@atlaskit/docs": "*",
+    "enzyme": "^3.10.0",
+    "typescript": "3.9.6"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@af/package-8",
+  "version": "1.0.2",
+  "private": true,
+  "dependencies": {
+    "bolt": "^0.24.8",
+    "chalk": "^2.1.0",
+    "enquirer": "^2.3.4",
+    "eslint": "^7.7.0",
+    "globby": "^6.1.0",
+    "outdent": "^0.5.0",
+    "term-size": "^2.2.1",
+    "ts-node": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.14",
+    "rimraf": "^2.6.3",
+    "stricter": "^0.5.0"
+  },
+  "peerDependencies": {}
+}

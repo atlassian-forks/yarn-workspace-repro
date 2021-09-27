@@ -1,0 +1,23 @@
+{
+  "name": "@atlassian/package-240",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "sideEffects": false,
+  "author": "Atlassian Pty Ltd",
+  "bin": "./cli.js",
+  "files": [
+    "cli.js",
+    "src/"
+  ],
+  "devDependencies": {
+    "@types/lodash": "^4.14.157",
+    "@types/yargs": "^15.0.5"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "node-fetch": "^2.6.1",
+    "ts-node": "^10.0.0",
+    "yargs": "^15.3.1"
+  },
+  "peerDependencies": {}
+}

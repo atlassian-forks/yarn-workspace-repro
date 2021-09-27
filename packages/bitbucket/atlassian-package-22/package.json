@@ -1,0 +1,48 @@
+{
+  "name": "@atlassian/package-22",
+  "version": "0.8.1",
+  "publishConfig": {
+    "registry": "https://packages.atlassian.com/api/npm/atlassian-npm/"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "module:es2019": "dist/es2019/index.js",
+  "types": "dist/types/index.d.ts",
+  "atlaskit:src": "src/index.ts",
+  "dependencies": {
+    "@atlaskit/analytics-next": "^8.0.0",
+    "@atlaskit/button": "^16.0.0",
+    "@atlaskit/icon": "^21.9.0",
+    "@atlaskit/icon-priority": "^6.0.0",
+    "@atlaskit/modal-dialog": "^12.0.0",
+    "@atlaskit/section-message": "^6.0.0",
+    "@atlaskit/theme": "^12.0.0",
+    "@atlaskit/tooltip": "^17.5.0",
+    "@babel/runtime": "^7.0.0",
+    "@formatjs/intl-utils": "^3.8.4",
+    "date-fns": "^2.17.0",
+    "react-animate-height": "^2.0.5",
+    "react-intersection-observer": "^8.26.2",
+    "react-intl-next": "npm:react-intl@^5.18.1"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "styled-components": "^3.2.6"
+  },
+  "devDependencies": {
+    "@atlaskit/docs": "^9.0.0",
+    "@atlaskit/page": "^12.0.0",
+    "enzyme": "^3.10.0",
+    "typescript": "3.9.6"
+  },
+  "techstack": {
+    "@atlassian/frontend": {
+      "import-structure": "atlassian-conventions"
+    }
+  },
+  "af:exports": {
+    ".": "./src/index.ts"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "name": "@atlassian/package-77",
+  "version": "5.1.1",
+  "publishConfig": {
+    "registry": "https://packages.atlassian.com/api/npm/npm-remote"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "sideEffects": false,
+  "dependencies": {
+    "@atlassian/package-37": "7.1.0",
+    "@atlassian/package-38": "3.0.10",
+    "@atlassian/package-42": "2.2.2",
+    "@atlassian/package-43": "5.1.2",
+    "@atlassian/package-44": "5.0.1",
+    "@atlassian/package-45": "2.0.4",
+    "@atlassian/package-59": "^0.0.8",
+    "@atlassian/package-61": "2.0.7",
+    "@atlassian/package-62": "^1.2.0",
+    "@atlassian/package-65": "6.0.11",
+    "@atlassian/package-66": "3.0.0",
+    "@atlassian/package-68": "^4.0.0",
+    "@atlassian/package-69": "^4.0.0",
+    "@atlassian/package-71": "2.0.0",
+    "@atlassian/package-72": "4.0.0",
+    "@atlassian/package-73": "^0.1.2",
+    "@atlassian/package-76": "1.0.2",
+    "@babel/runtime": "^7.0.0"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
+  },
+  "devDependencies": {
+    "@atlaskit/docs": "*",
+    "@testing-library/react": "^8.0.1",
+    "typescript": "3.9.6"
+  },
+  "techstack": {
+    "@atlassian/frontend": {
+      "import-structure": "atlassian-conventions"
+    }
+  },
+  "af:exports": {
+    "./billing-details": "./src/billing-details.ts",
+    "./billing-history": "./src/billing-history.ts",
+    "./credit-card-ccp": "./src/credit-card-ccp.ts",
+    "./credit-card-hams": "./src/credit-card-hams.ts",
+    "./entitlements": "./src/entitlements.ts",
+    "./environment": "./src/environment.ts",
+    "./layout": "./src/layout.ts",
+    "./legal-notes": "./src/legal-notes.ts",
+    "./mocks": "./src/mocks.ts",
+    "./payment-flow": "./src/payment-flow.ts",
+    "./payment-methods": "./src/payment-methods.ts",
+    "./recaptcha-hams": "./src/recaptcha-hams.ts",
+    "./recaptcha-base": "./src/recaptcha-base.ts",
+    "./service-hook": "./src/service-hook.ts",
+    "./telemetry": "./src/telemetry.tsx",
+    "./telemetry-ccp-utils": "./src/telemetry-ccp-utils.tsx",
+    "./telemetry-listeners": "./src/telemetry-listeners.tsx",
+    "./telemetry-integrations": "./src/telemetry-integrations.tsx",
+    "./types": "./src/types.ts"
+  }
+}

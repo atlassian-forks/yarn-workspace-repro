@@ -1,0 +1,34 @@
+{
+  "name": "@atlassian/package-201",
+  "version": "3.5.6",
+  "publishConfig": {
+    "registry": "https://packages.atlassian.com/api/npm/npm-remote"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "module:es2019": "dist/es2019/index.js",
+  "types": "dist/types/index.d.ts",
+  "sideEffects": false,
+  "atlaskit:src": "src/index.ts",
+  "dependencies": {
+    "@atlaskit/analytics-gas-types": "^5.0.2",
+    "@babel/runtime": "^7.0.0",
+    "@types/tti-polyfill": "^0.2.0",
+    "bowser": "^2.9.0",
+    "date-fns": "^2.17.0",
+    "tti-polyfill": "^0.2.2",
+    "web-vitals": "^2.1.0"
+  },
+  "devDependencies": {
+    "sinon": "^2.2.0",
+    "typescript": "3.9.6"
+  },
+  "techstack": {
+    "@atlassian/frontend": {
+      "import-structure": "atlassian-conventions"
+    }
+  },
+  "peerDependencies": {}
+}

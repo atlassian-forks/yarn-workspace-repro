@@ -1,0 +1,29 @@
+{
+  "name": "@atlassian/package-21",
+  "version": "0.16.0",
+  "publishConfig": {
+    "registry": "https://packages.atlassian.com/api/npm/atlassian-npm/"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "module:es2019": "dist/es2019/index.js",
+  "types": "dist/types/index.d.ts",
+  "atlaskit:src": "src/index.ts",
+  "dependencies": {
+    "@babel/runtime": "^7.0.0",
+    "@types/js-yaml": "^3.12.5",
+    "js-yaml": "^3.13.1"
+  },
+  "devDependencies": {
+    "@atlaskit/docs": "^9.0.0",
+    "typescript": "3.9.6"
+  },
+  "techstack": {
+    "@atlassian/frontend": {
+      "import-structure": "atlassian-conventions"
+    }
+  },
+  "peerDependencies": {}
+}

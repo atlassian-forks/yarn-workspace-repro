@@ -1,0 +1,22 @@
+{
+  "name": "@repo/package-4",
+  "version": "0.8.4",
+  "private": true,
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "main": "src/index.js",
+  "sideEffects": false,
+  "dependencies": {
+    "@atlassian/package-224": "^0.7.0",
+    "@atlassian/package-225": "^0.1.0",
+    "@repo/package-3": "^0.2.0",
+    "eslint-plugin-react": "^7.17.0"
+  },
+  "techstack": {
+    "@atlassian/frontend": {
+      "import-structure": "atlassian-conventions"
+    }
+  },
+  "devDependencies": {},
+  "peerDependencies": {}
+}

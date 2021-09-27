@@ -1,0 +1,46 @@
+{
+  "name": "cla-bot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CLA bot",
+  "author": "Gora Kong <gkong@atlassian.com>",
+  "keywords": [
+    "probot",
+    "github",
+    "probot-app"
+  ],
+  "scripts": {
+    "dev": "nodemon",
+    "start": "probot run ./index.js"
+  },
+  "atlassian": {
+    "team": "AFP: Dev Infrastructure"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.1",
+    "probot": "^11.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2",
+    "smee-client": "^1.1.0"
+  },
+  "resolutions": {
+    "probot/eventsource/original/url-parse": "^1.5.1",
+    "nodemon/update-notifier/latest-version/package-json/got/cacheable-request/normalize-url": "^5.3.1"
+  },
+  "engines": {
+    "node": ">= 8.3.0"
+  },
+  "nodemonConfig": {
+    "exec": "yarn start",
+    "watch": [
+      ".env",
+      "."
+    ]
+  },
+  "stricter": {
+    "no-unused-dependencies": {
+      "exclude": ["probot"]
+    }
+  }
+}

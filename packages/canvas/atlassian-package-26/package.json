@@ -1,0 +1,27 @@
+{
+  "name": "@atlassian/package-26",
+  "version": "0.0.4",
+  "private": true,
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "module:es2019": "dist/es2019/index.js",
+  "types": "dist/types/index.d.ts",
+  "sideEffects": false,
+  "atlaskit:src": "src/index.ts",
+  "af:exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.0.0"
+  },
+  "devDependencies": {
+    "@atlaskit/package-9": "*",
+    "@atlaskit/package-10": "*",
+    "puppeteer": "10.1.0",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "typescript": "3.9.6"
+  },
+  "peerDependencies": {}
+}

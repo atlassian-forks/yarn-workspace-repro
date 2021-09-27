@@ -1,0 +1,43 @@
+{
+  "name": "@atlaskit/analytics-namespaced-context",
+  "version": "6.3.0",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "license": "Apache-2.0",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "module:es2019": "dist/es2019/index.js",
+  "types": "dist/types/index.d.ts",
+  "atlaskit:src": "src/index.ts",
+  "af:exports": {
+    "./MediaAnalyticsContext": "./src/MediaAnalyticsContext.tsx",
+    "./NavigationAnalyticsContext": "./src/NavigationAnalyticsContext.tsx",
+    "./PeopleTeamsAnalyticsContext": "./src/PeopleTeamsAnalyticsContext.tsx",
+    ".": "./src/index.ts"
+  },
+  "config": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@atlaskit/analytics-next": "^8.0.0",
+    "@babel/runtime": "^7.0.0"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
+  },
+  "devDependencies": {
+    "@atlaskit/analytics-listeners": "^8.1.0",
+    "@atlaskit/docs": "*",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
+    "react": "^16.8.0",
+    "typescript": "3.9.6"
+  },
+  "keywords": [
+    "fabric",
+    "ui"
+  ]
+}

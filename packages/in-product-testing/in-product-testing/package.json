@@ -1,0 +1,59 @@
+{
+  "name": "@atlaskit/in-product-testing",
+  "version": "0.1.0",
+  "author": "Atlassian Pty Ltd",
+  "license": "Apache-2.0",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "module:es2019": "dist/es2019/index.js",
+  "types": "dist/types/index.d.ts",
+  "sideEffects": false,
+  "atlaskit:src": "src/index.ts",
+  "af:exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.0.0"
+  },
+  "devDependencies": {
+    "@atlaskit/package-2": "*",
+    "@atlaskit/docs": "*",
+    "@atlaskit/package-8": "*",
+    "@atlaskit/package-9": "*",
+    "@atlaskit/package-10": "*",
+    "typescript": "3.9.6",
+    "wait-for-expect": "^1.2.0"
+  },
+  "techstack": {
+    "@atlassian/frontend": {
+      "code-structure": [
+        "tangerine-next"
+      ],
+      "import-structure": [
+        "atlassian-conventions"
+      ],
+      "circular-dependencies": [
+        "file-and-folder-level"
+      ]
+    },
+    "@repo/internal": {
+      "analytics": [
+        "analytics-next"
+      ],
+      "theming": [
+        "new-theming-api"
+      ],
+      "ui-components": [
+        "lite-mode"
+      ],
+      "deprecation": [
+        "no-deprecated-imports"
+      ]
+    }
+  },
+  "peerDependencies": {}
+}

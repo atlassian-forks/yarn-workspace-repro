@@ -1,0 +1,42 @@
+{
+  "name": "@atlassian/package-139",
+  "version": "0.0.32",
+  "publishConfig": {
+    "registry": "https://packages.atlassian.com/api/npm/npm-remote"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "module:es2019": "dist/es2019/index.js",
+  "types": "dist/types/index.d.ts",
+  "sideEffects": false,
+  "atlaskit:src": "src/index.ts",
+  "dependencies": {
+    "@babel/runtime": "^7.0.0"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "devDependencies": {
+    "@atlaskit/button": "^16.0.0",
+    "@atlaskit/docs": "^9.0.0",
+    "@atlaskit/dynamic-table": "^14.1.0",
+    "@atlaskit/select": "^15.0.0",
+    "@atlaskit/spinner": "^15.0.2",
+    "@atlaskit/toggle": "^12.0.0",
+    "@testing-library/react": "^8.0.1",
+    "@testing-library/react-hooks": "^1.0.4",
+    "enzyme": "^3.10.0",
+    "jest": "^26.4.2",
+    "typescript": "3.9.6"
+  },
+  "af:exports": {
+    "./types": "./src/types.ts",
+    "./abstract-plugins": "./src/abstract/index.ts",
+    "./plugins": "./src/portable/index.ts",
+    "./helpers": "./src/helpers/index.ts",
+    ".": "./src/index.ts"
+  }
+}

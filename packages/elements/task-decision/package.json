@@ -1,0 +1,58 @@
+{
+  "name": "@atlaskit/task-decision",
+  "version": "17.2.3",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "license": "Apache-2.0",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "module:es2019": "dist/es2019/index.js",
+  "types": "dist/types/index.d.ts",
+  "sideEffects": false,
+  "atlaskit:src": "src/index.ts",
+  "config": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@atlaskit/analytics-namespaced-context": "^6.3.0",
+    "@atlaskit/analytics-next": "^8.2.0",
+    "@atlaskit/icon": "^21.9.0",
+    "@atlaskit/theme": "^12.0.0",
+    "@atlaskit/util-service-support": "^6.0.0",
+    "@babel/runtime": "^7.0.0",
+    "uuid": "^3.1.0"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "styled-components": "^3.2.6",
+    "url-search-params": "^0.10.0"
+  },
+  "devDependencies": {
+    "@atlaskit/analytics-listeners": "^8.0.0",
+    "@atlaskit/avatar": "^20.5.0",
+    "@atlaskit/docs": "*",
+    "@atlaskit/editor-common": "^60.1.0",
+    "@atlaskit/package-20": "^0.7.0",
+    "@atlaskit/renderer": "^81.1.0",
+    "@atlaskit/util-data-test": "^16.0.0",
+    "@types/url-search-params": "^0.10.0",
+    "date-fns": "^2.17.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
+    "fetch-mock": "^8.0.0",
+    "jest-fetch-mock": "^3.0.3",
+    "react": "^16.8.0",
+    "sinon": "^2.2.0",
+    "typescript": "3.9.6",
+    "url-search-params": "^0.10.0"
+  },
+  "techstack": {
+    "@atlassian/frontend": {
+      "tree-shaking": []
+    }
+  }
+}

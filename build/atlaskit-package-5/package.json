@@ -1,0 +1,26 @@
+{
+  "name": "@atlaskit/package-5",
+  "version": "0.5.11",
+  "private": true,
+  "main": "./cli.js",
+  "bin": {
+    "measure": "./cli.js"
+  },
+  "author": "Atlassian Pty Ltd",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@atlaskit/package-2": "^2.6.15",
+    "@atlaskit/package-11": "^2.1.1",
+    "axios": "^0.21.1",
+    "bolt": "^0.24.8",
+    "chalk": "^2.1.0",
+    "gzip-size": "^5.0.0",
+    "meow": "^6.0.0",
+    "minimatch": "^3.0.4",
+    "ora": "^3.0.0",
+    "pretty-bytes": "^5.1.0",
+    "webpack": "^4.41.3"
+  },
+  "devDependencies": {},
+  "peerDependencies": {}
+}

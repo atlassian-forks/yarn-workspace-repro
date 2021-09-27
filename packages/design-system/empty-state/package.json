@@ -1,0 +1,54 @@
+{
+  "name": "@atlaskit/empty-state",
+  "version": "7.3.0",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "license": "Apache-2.0",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "module:es2019": "dist/es2019/index.js",
+  "types": "dist/types/index.d.ts",
+  "sideEffects": false,
+  "atlaskit:src": "src/index.tsx",
+  "dependencies": {
+    "@atlaskit/button": "^16.1.0",
+    "@atlaskit/spinner": "^15.1.0",
+    "@atlaskit/theme": "^12.0.0",
+    "@atlaskit/tokens": "^0.2.0",
+    "@babel/runtime": "^7.0.0",
+    "@emotion/core": "^10.0.9"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
+  },
+  "devDependencies": {
+    "@atlaskit/package-2": "*",
+    "@atlaskit/docs": "^9.0.0",
+    "@atlaskit/package-8": "*",
+    "@atlaskit/package-9": "*",
+    "@testing-library/react": "^8.0.1",
+    "enzyme": "^3.10.0",
+    "react-dom": "^16.8.0",
+    "typescript": "3.9.6",
+    "wait-for-expect": "^1.2.0"
+  },
+  "techstack": {
+    "@atlassian/frontend": {
+      "import-structure": "atlassian-conventions"
+    },
+    "@repo/internal": {
+      "analytics": "analytics-next",
+      "theming": "tokens",
+      "styling": "emotion",
+      "design-system": "v1",
+      "deprecation": "no-deprecated-imports"
+    }
+  },
+  "af:exports": {
+    "./types": "./src/types.tsx",
+    ".": "./src/index.tsx"
+  }
+}

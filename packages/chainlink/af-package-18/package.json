@@ -1,0 +1,24 @@
+{
+  "name": "@af/package-18",
+  "version": "0.0.5",
+  "private": true,
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "main": "src/index.ts",
+  "sideEffects": false,
+  "dependencies": {
+    "@atlaskit/button": "^16.0.0",
+    "@atlassian/package-222": "^0.2.0",
+    "@emotion/styled": "^10.0.7"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
+  },
+  "techstack": {
+    "@atlassian/frontend": {
+      "code-structure": "tangerine-next",
+      "import-structure": "atlassian-conventions"
+    }
+  },
+  "devDependencies": {}
+}

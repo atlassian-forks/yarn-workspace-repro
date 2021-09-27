@@ -1,0 +1,51 @@
+{
+  "name": "@atlassian/package-113",
+  "version": "1.2.1",
+  "private": true,
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "module:es2019": "dist/es2019/index.js",
+  "types": "dist/types/index.d.ts",
+  "sideEffects": false,
+  "atlaskit:src": "src/index.ts",
+  "dependencies": {
+    "@atlaskit/analytics-next": "^8.0.0",
+    "@atlaskit/button": "^16.0.0",
+    "@atlaskit/flag": "^14.4.0",
+    "@atlaskit/form": "^8.4.0",
+    "@atlaskit/modal-dialog": "^12.0.0",
+    "@atlaskit/textfield": "^5.0.0",
+    "@atlaskit/theme": "^12.0.0",
+    "@atlaskit/user-picker": "^7.3.0",
+    "@atlassian/package-84": "^0.4.4",
+    "@atlassian/package-91": "^1.8.2",
+    "@babel/runtime": "^7.0.0"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-intl": "^2.6.0",
+    "styled-components": "^3.2.6"
+  },
+  "devDependencies": {
+    "@atlaskit/checkbox": "^12.0.0",
+    "@atlaskit/docs": "*",
+    "@atlaskit/radio": "^5.0.0",
+    "@atlassian/package-125": "^1.2.0",
+    "@atlassian/package-183": "^0.1.0",
+    "@testing-library/react": "^8.0.1",
+    "@testing-library/react-hooks": "^1.0.4",
+    "@testing-library/user-event": "10.4.0",
+    "fetch-mock": "^8.0.0",
+    "typescript": "3.9.6"
+  },
+  "techstack": {
+    "@atlassian/frontend": {
+      "import-structure": "atlassian-conventions"
+    }
+  },
+  "af:exports": {
+    ".": "./src/index.ts"
+  }
+}

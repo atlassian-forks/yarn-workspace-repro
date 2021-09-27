@@ -1,0 +1,24 @@
+{
+  "name": "@atlaskit/package-6",
+  "private": true,
+  "version": "0.0.5",
+  "types": "./src/index.ts",
+  "af:exports": {
+    ".": "./src/index.ts"
+  },
+  "author": "Atlassian Pty Ltd",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "bolt": "^0.24.8",
+    "globby": "^6.1.0"
+  },
+  "bin": {
+    "get-multi-entry-map": "./cli/get-multi-entry-map.js",
+    "get-tsconfig-paths": "./cli/get-tsconfig-paths.js"
+  },
+  "devDependencies": {
+    "@atlaskit/package-2": "^2.8.0",
+    "ts-node": "^10.0.0"
+  },
+  "peerDependencies": {}
+}

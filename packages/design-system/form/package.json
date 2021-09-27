@@ -1,0 +1,98 @@
+{
+  "name": "@atlaskit/form",
+  "version": "8.4.0",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "license": "Apache-2.0",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "module:es2019": "dist/es2019/index.js",
+  "types": "dist/types/index.d.ts",
+  "sideEffects": false,
+  "atlaskit:src": "src/index.tsx",
+  "atlaskit:designLink": "https://atlassian.design/guidelines/product/patterns/forms",
+  "af:exports": {
+    "./CheckboxField": "./src/entry-points/checkbox-field.tsx",
+    "./Field": "./src/entry-points/field.tsx",
+    "./Fieldset": "./src/entry-points/fieldset.tsx",
+    "./FormFooter": "./src/entry-points/form-footer.tsx",
+    "./FormHeader": "./src/entry-points/form-header.tsx",
+    "./FormSection": "./src/entry-points/form-section.tsx",
+    "./Form": "./src/entry-points/form.tsx",
+    "./Messages": "./src/entry-points/messages.tsx",
+    "./RangeField": "./src/entry-points/range-field.tsx",
+    ".": "./src/index.tsx"
+  },
+  "dependencies": {
+    "@atlaskit/icon": "^21.9.0",
+    "@atlaskit/theme": "^12.0.0",
+    "@atlaskit/tokens": "^0.2.0",
+    "@babel/runtime": "^7.0.0",
+    "@emotion/core": "^10.0.9",
+    "final-form": "^4.20.1",
+    "final-form-focus": "^1.1.2",
+    "lodash": "^4.17.15",
+    "react-uid": "^2.2.0",
+    "tiny-invariant": "^0.0.3"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
+  },
+  "devDependencies": {
+    "@atlaskit/package-2": "*",
+    "@atlaskit/button": "^16.1.0",
+    "@atlaskit/calendar": "^12.1.0",
+    "@atlaskit/checkbox": "^12.3.0",
+    "@atlaskit/datetime-picker": "^11.0.0",
+    "@atlaskit/docs": "^9.0.0",
+    "@atlaskit/dropdown-menu": "^10.1.0",
+    "@atlaskit/droplist": "^11.0.0",
+    "@atlaskit/modal-dialog": "^12.0.0",
+    "@atlaskit/multi-select": "^15.0.0",
+    "@atlaskit/radio": "^5.3.0",
+    "@atlaskit/range": "^5.0.5",
+    "@atlaskit/section-message": "^6.1.0",
+    "@atlaskit/select": "^15.2.0",
+    "@atlaskit/single-select": "^10.0.0",
+    "@atlaskit/package-8": "*",
+    "@atlaskit/textarea": "^4.2.0",
+    "@atlaskit/textfield": "^5.1.0",
+    "@atlaskit/toggle": "^12.3.0",
+    "@atlaskit/tooltip": "^17.5.0",
+    "@atlaskit/package-9": "*",
+    "@atlaskit/package-10": "*",
+    "@testing-library/react": "^8.0.1",
+    "@types/final-form-focus": "^1.1.1",
+    "enzyme": "^3.10.0",
+    "react-dom": "^16.8.0",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-test-renderer": "^16.8.0",
+    "typescript": "3.9.6",
+    "validator": "^9.4.1",
+    "wait-for-expect": "^1.2.0"
+  },
+  "keywords": [
+    "atlaskit",
+    "react",
+    "ui"
+  ],
+  "techstack": {
+    "@atlassian/frontend": {
+      "import-structure": "atlassian-conventions"
+    },
+    "@repo/internal": {
+      "analytics": "analytics-next",
+      "theming": [
+        "new-theming-api",
+        "tokens"
+      ],
+      "styling": "emotion",
+      "design-system": "v1",
+      "deprecation": "no-deprecated-imports"
+    }
+  }
+}

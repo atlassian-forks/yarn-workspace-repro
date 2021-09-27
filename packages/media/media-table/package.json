@@ -1,0 +1,59 @@
+{
+  "name": "@atlaskit/media-table",
+  "version": "9.0.2",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "license": "Apache-2.0",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "module:es2019": "dist/es2019/index.js",
+  "types": "dist/types/index.d.ts",
+  "sideEffects": false,
+  "atlaskit:src": "src/index.ts",
+  "af:exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@atlaskit/analytics-next": "^8.0.0",
+    "@atlaskit/button": "^16.0.0",
+    "@atlaskit/dynamic-table": "^14.1.0",
+    "@atlaskit/icon": "^21.9.0",
+    "@atlaskit/media-client": "^14.2.0",
+    "@atlaskit/media-ui": "^17.0.0",
+    "@atlaskit/media-viewer": "^45.7.0",
+    "@atlaskit/theme": "^12.0.0",
+    "@atlaskit/tooltip": "^17.5.0",
+    "@babel/runtime": "^7.0.0",
+    "memoize-one": "^5.1.0"
+  },
+  "peerDependencies": {
+    "@atlaskit/media-core": "^32.2.0",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "rxjs": "^5.5.0",
+    "styled-components": "^3.2.6"
+  },
+  "devDependencies": {
+    "@atlaskit/docs": "^9.0.0",
+    "@atlaskit/field-range": "^9.0.0",
+    "@atlaskit/icon-file-type": "^6.3.0",
+    "@atlaskit/media-common": "^2.9.0",
+    "@atlaskit/media-core": "^32.2.0",
+    "@atlaskit/media-test-helpers": "^28.8.0",
+    "@atlaskit/package-8": "^0.2.0",
+    "@types/dateformat": "^3.0.1",
+    "dateformat": "^4.5.1",
+    "enzyme": "^3.10.0",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "rxjs": "^5.5.0",
+    "styled-components": "^3.2.6",
+    "typescript": "3.9.6"
+  },
+  "resolutions": {
+    "lru-fast": "0.2.2"
+  }
+}

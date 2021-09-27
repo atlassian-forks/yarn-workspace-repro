@@ -1,0 +1,76 @@
+{
+  "name": "@atlassian/package-138",
+  "version": "13.2.1",
+  "publishConfig": {
+    "registry": "https://packages.atlassian.com/api/npm/npm-remote"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "module:es2019": "dist/es2019/index.js",
+  "types": "dist/types/index.d.ts",
+  "sideEffects": false,
+  "atlaskit:src": "src/index.tsx",
+  "dependencies": {
+    "@atlaskit/analytics-gas-types": "^5.0.0",
+    "@atlaskit/editor-common": "^60.1.0",
+    "@atlaskit/mention": "^19.7.0",
+    "@atlaskit/modal-dialog": "^12.0.0",
+    "@atlaskit/theme": "^12.0.0",
+    "@atlassian/package-133": "^22.0.0",
+    "@atlassian/package-136": "^24.5.0",
+    "@babel/runtime": "^7.0.0",
+    "@emotion/core": "^10.0.9",
+    "apollo-client": "^2.5.1",
+    "fast-deep-equal": "^3.1.1",
+    "memoize-one": "^5.1.0",
+    "uuid": "^3.1.0"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "devDependencies": {
+    "@atlaskit/analytics-listeners": "^8.0.0",
+    "@atlaskit/button": "^16.1.0",
+    "@atlaskit/editor-core": "^150.0.0",
+    "@atlaskit/package-16": "^15.4.0",
+    "@atlaskit/icon": "^21.9.0",
+    "@atlaskit/media-core": "^32.2.0",
+    "@atlaskit/renderer": "^81.1.0",
+    "@atlassian/package-134": "^4.1.0",
+    "@forge/ui": "~0.7.0",
+    "@storybook/addon-actions": "^5.2.5",
+    "@testing-library/react": "^8.0.1",
+    "@testing-library/react-hooks": "^1.0.4",
+    "@types/jscodeshift": "^0.11.0",
+    "@types/react": "^16.8.0",
+    "@types/react-intl": "^2.3.8",
+    "apollo-link-mock": "^1.0.1",
+    "jest-useragent-mock": "^0.1.1",
+    "jscodeshift": "^0.13.0",
+    "mock-apollo-client": "^0.1.0",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "react-intl": "^2.6.0",
+    "react-loadable": "^5.1.0",
+    "typescript": "3.9.6"
+  },
+  "techstack": {
+    "@repo/internal": {
+      "isolated-component-development": "storybook-examples"
+    }
+  },
+  "af:exports": {
+    "./constants": "./src/constants.ts",
+    "./createConfigSchema": "./src/createConfigSchema.ts",
+    "./ForgeEditorExtensionNext": "./src/ForgeEditorExtensionNext.tsx",
+    "./getForgeExtensionProviderNext": "./src/getForgeExtensionProviderNext.tsx",
+    "./getForgeExtensionProviderShared": "./src/getForgeExtensionProviderShared.tsx",
+    "./icon": "./src/icon.tsx",
+    "./renderExtensionNext": "./src/renderExtensionNext.tsx",
+    "./utils": "./src/utils.ts",
+    ".": "./src/index.tsx"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@atlassian/package-235",
+  "version": "1.0.7",
+  "author": "Atlassian Pty Ltd",
+  "private": true,
+  "publishConfig": {
+    "registry": "https://packages.atlassian.com/api/npm/npm-remote"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "dependencies": {
+    "@atlaskit/atlassian-navigation": "^1.0.0",
+    "@atlaskit/popup": "^1.0.6",
+    "@atlassian/package-26": "^0.0.4",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "devDependencies": {
+    "@atlassian/package-24": "^1.0.0"
+  },
+  "peerDependencies": {}
+}

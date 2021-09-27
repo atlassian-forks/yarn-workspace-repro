@@ -1,0 +1,38 @@
+{
+  "name": "@atlaskit/dependency-version-analytics",
+  "version": "0.3.2",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "license": "Apache-2.0",
+  "main": "dist/cjs/index.js",
+  "types": "dist/types/index.d.ts",
+  "sideEffects": false,
+  "atlaskit:src": "src/index.ts",
+  "bin": {
+    "dependency-version-analytics": "./bin/dependency-version-analytics.js"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.0.0",
+    "chalk": "^2.1.0",
+    "debug": "^2.2.0",
+    "inquirer": "^6.4.0",
+    "meow": "^6.0.0",
+    "micromatch": "^4.0.2",
+    "node-fetch": "^2.6.1",
+    "semver": "^7.3.0",
+    "simple-git": "^1.130.0"
+  },
+  "peerDependencies": {},
+  "devDependencies": {
+    "@types/chalk": "^2.2.0",
+    "@types/jest": "^26.0.14",
+    "@types/micromatch": "^4.0.1",
+    "@types/node": "~12.0.12",
+    "@types/url-parse": "^1.4.3",
+    "ts-node": "^10.0.0",
+    "typescript": "3.9.6"
+  }
+}

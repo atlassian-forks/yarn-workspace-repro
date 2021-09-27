@@ -1,0 +1,28 @@
+{
+  "name": "@atlaskit/package-20",
+  "version": "0.7.6",
+  "private": true,
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "license": "Apache-2.0",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
+  "atlaskit:src": "src/index.ts",
+  "af:exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@atlaskit/package-8": "*",
+    "@babel/runtime": "^7.0.0"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "react-intl": "^2.6.0"
+  },
+  "devDependencies": {
+    "@atlaskit/docs": "*",
+    "typescript": "3.9.6"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "@af/package-14",
+  "version": "0.7.4",
+  "private": true,
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "dependencies": {
+    "@atlaskit/package-2": "^2.7.0",
+    "@changesets/get-release-plan": "^2.0.0",
+    "axios": "^0.21.1",
+    "bolt": "^0.24.8",
+    "chalk": "^2.1.0",
+    "globby": "^6.1.0",
+    "js-yaml": "^3.13.1",
+    "simple-git": "^1.130.0",
+    "spawndamnit": "^1.0.0"
+  },
+  "devDependencies": {
+    "@changesets/types": "^3.2.0",
+    "@changesets/write": "^0.1.3",
+    "@types/jest": "^26.0.14",
+    "@types/js-yaml": "^3.12.5",
+    "@types/node": "~12.0.12",
+    "jest": "^26.4.2",
+    "jest-fixtures": "^0.6.0",
+    "jest-in-case": "^1.0.2",
+    "ts-node": "^10.0.0"
+  },
+  "peerDependencies": {}
+}

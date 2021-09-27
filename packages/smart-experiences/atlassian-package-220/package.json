@@ -1,0 +1,74 @@
+{
+  "name": "@atlassian/package-220",
+  "version": "0.3.0",
+  "publishConfig": {
+    "registry": "https://packages.atlassian.com/artifactory/api/npm/npm-remote"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "module:es2019": "dist/es2019/index.js",
+  "types": "dist/types/index.d.ts",
+  "sideEffects": false,
+  "atlaskit:src": "src/index.ts",
+  "dependencies": {
+    "@atlaskit/analytics-next": "^8.2.0",
+    "@atlaskit/select": "^15.1.0",
+    "@babel/runtime": "^7.0.0",
+    "lodash": "^4.17.15",
+    "rusha": "^0.8.13",
+    "uuid": "^3.1.0"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
+  },
+  "devDependencies": {
+    "@atlaskit/analytics-gas-types": "^5.0.0",
+    "@atlaskit/analytics-listeners": "^8.0.0",
+    "@atlaskit/analytics-viewer": "^0.4.5",
+    "@atlaskit/package-2": "*",
+    "@atlaskit/button": "^16.0.0",
+    "@atlaskit/docs": "*",
+    "@atlaskit/package-8": "*",
+    "@atlaskit/textfield": "^5.0.5",
+    "@atlaskit/package-9": "*",
+    "@atlaskit/package-10": "*",
+    "@atlassiansox/package-18": "^3.0.0",
+    "@storybook/addon-knobs": "^5.3.18",
+    "@testing-library/react": "^8.0.1",
+    "@testing-library/react-hooks": "^1.0.4",
+    "enzyme": "^3.10.0",
+    "fetch-mock": "^8.0.0",
+    "react-dom": "^16.8.0",
+    "typescript": "3.9.6",
+    "wait-for-expect": "^1.2.0"
+  },
+  "techstack": {
+    "@atlassian/frontend": {
+      "import-structure": [
+        "atlassian-conventions"
+      ],
+      "circular-dependencies": [
+        "file-and-folder-level"
+      ]
+    },
+    "@repo/internal": {
+      "analytics": [
+        "analytics-next"
+      ],
+      "theming": [
+        "new-theming-api"
+      ],
+      "ui-components": [
+        "lite-mode"
+      ],
+      "deprecation": [
+        "no-deprecated-imports"
+      ]
+    }
+  },
+  "af:exports": {
+    ".": "./src/index.ts"
+  }
+}

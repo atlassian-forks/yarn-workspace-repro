@@ -1,0 +1,39 @@
+{
+  "name": "@atlassian/package-127",
+  "version": "1.0.3",
+  "private": true,
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "module:es2019": "dist/es2019/index.js",
+  "types": "dist/types/index.d.ts",
+  "sideEffects": false,
+  "atlaskit:src": "src/index.ts",
+  "af:exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@atlaskit/adf-schema": "^19.2.0",
+    "@babel/runtime": "^7.0.0",
+    "@types/faker": "^4.1.8",
+    "faker": "^4.1.0",
+    "memoize-one": "^5.1.0"
+  },
+  "devDependencies": {
+    "@atlaskit/adf-utils": "^14.3.0",
+    "@atlaskit/docs": "*",
+    "react": "^16.8.0",
+    "typescript": "3.9.6",
+    "wait-for-expect": "^1.2.0"
+  },
+  "techstack": {
+    "@atlassian/frontend": {
+      "circular-dependencies": [
+        "file-level"
+      ]
+    },
+    "import-structure": "atlassian-conventions"
+  },
+  "peerDependencies": {}
+}

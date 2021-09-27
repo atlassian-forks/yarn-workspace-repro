@@ -1,0 +1,28 @@
+{
+  "name": "@atlassian/package-24",
+  "version": "1.0.2",
+  "author": "Atlassian Pty Ltd",
+  "private": true,
+  "bin": {
+    "canvas-build": "./bin/canvas-build.js",
+    "canvas-start": "./bin/canvas-start.js"
+  },
+  "af:exports": {
+    "./build": "./src/canvas-build.ts",
+    "./start": "./src/canvas-start.ts"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "sideEffects": false,
+  "dependencies": {
+    "@atlaskit/package-11": "^2.1.11",
+    "@types/yargs": "^15.0.5",
+    "bolt": "^0.24.8",
+    "chalk": "^2.1.0",
+    "ora": "^3.0.0",
+    "yargs": "^15.3.1"
+  },
+  "devDependencies": {
+    "ts-node": "^10.0.0"
+  },
+  "peerDependencies": {}
+}

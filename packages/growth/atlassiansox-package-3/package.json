@@ -1,0 +1,52 @@
+{
+  "name": "@atlassiansox/package-3",
+  "version": "13.0.4",
+  "publishConfig": {
+    "registry": "https://packages.atlassian.com/api/npm/npm-remote"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "module:es2019": "dist/es2019/index.js",
+  "types": "dist/types/index.d.ts",
+  "atlaskit:src": "src/index.ts",
+  "dependencies": {
+    "@atlaskit/analytics-next": "^8.2.0",
+    "@atlaskit/avatar": "^20.5.0",
+    "@atlaskit/avatar-group": "^8.3.0",
+    "@atlaskit/button": "^16.0.0",
+    "@atlaskit/dropdown-menu": "^10.1.8",
+    "@atlaskit/icon": "^21.9.0",
+    "@atlaskit/lozenge": "^11.0.0",
+    "@atlaskit/profilecard": "^15.0.0",
+    "@atlaskit/table-tree": "^9.0.0",
+    "@atlaskit/textfield": "^5.0.0",
+    "@atlaskit/theme": "^12.0.0",
+    "@atlaskit/toggle": "^12.3.0",
+    "@atlaskit/tooltip": "^17.5.0",
+    "@atlassian/package-84": "^0.4.1",
+    "@atlassiansox/package-14": "^6.0.2",
+    "@babel/runtime": "^7.0.0",
+    "@emotion/styled": "^10.0.7",
+    "react-intl": "^2.6.0",
+    "react-sweet-state": "^2.1.1"
+  },
+  "peerDependencies": {
+    "@atlassiansox/package-18": "^3.5.0",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "devDependencies": {
+    "@atlaskit/css-reset": "^6.1.0",
+    "@storybook/addon-actions": "^5.2.5",
+    "@storybook/react": "^6.0.0-alpha.19",
+    "@testing-library/react": "^8.0.1",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
+    "fetch-mock": "^8.0.0",
+    "jsdom": "^16.2.2",
+    "sinon": "^2.2.0",
+    "typescript": "3.9.6"
+  }
+}

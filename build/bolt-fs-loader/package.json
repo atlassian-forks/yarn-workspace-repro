@@ -1,0 +1,15 @@
+{
+  "name": "bolt-fs-loader",
+  "version": "0.0.7",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "bolt": "^0.24.8",
+    "globby": "^6.1.0",
+    "loader-utils": "^1.1.0"
+  },
+  "devDependencies": {},
+  "peerDependencies": {}
+}

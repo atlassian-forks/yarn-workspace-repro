@@ -1,0 +1,51 @@
+{
+  "name": "@atlassian/package-66",
+  "version": "3.0.0",
+  "publishConfig": {
+    "registry": "https://packages.atlassian.com/api/npm/npm-remote"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "module:es2019": "dist/es2019/index.js",
+  "types": "dist/types/index.d.ts",
+  "sideEffects": false,
+  "atlaskit:src": "src/index.ts",
+  "dependencies": {
+    "@atlaskit/button": "^16.1.0",
+    "@atlaskit/radio": "^5.3.0",
+    "@atlaskit/theme": "^12.0.0",
+    "@atlassian/package-45": "2.0.4",
+    "@atlassian/package-61": "2.0.7",
+    "@atlassian/package-63": "1.0.1",
+    "@atlassian/package-71": "2.0.0",
+    "@atlassian/package-72": "4.0.0",
+    "@atlassian/package-76": "1.0.2",
+    "@babel/runtime": "^7.0.0",
+    "@emotion/css": "^10.0.14",
+    "@emotion/styled": "^10.0.7"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
+  },
+  "devDependencies": {
+    "@atlaskit/docs": "^9.0.0",
+    "@atlaskit/package-9": "*",
+    "@atlaskit/package-10": "*",
+    "@atlassian/package-75": "1.0.4",
+    "@testing-library/react": "^8.0.1",
+    "@testing-library/react-hooks": "^1.0.4",
+    "@types/react": "^16.8.0",
+    "fetch-mock": "^8.0.0",
+    "typescript": "3.9.6"
+  },
+  "techstack": {
+    "@atlassian/frontend": {
+      "code-structure": "tangerine-next",
+      "import-structure": [
+        "atlassian-conventions"
+      ]
+    }
+  }
+}

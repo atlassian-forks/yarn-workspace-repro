@@ -1,0 +1,85 @@
+{
+  "name": "@atlassian/package-92",
+  "version": "1.12.0",
+  "author": "Atlassian Pty Ltd",
+  "publishConfig": {
+    "registry": "https://packages.atlassian.com/api/npm/npm-remote"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "module:es2019": "dist/es2019/index.js",
+  "types": "dist/types/index.d.ts",
+  "sideEffects": false,
+  "atlaskit:src": "src/index.ts",
+  "af:exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@atlaskit/analytics-next": "^8.3.0",
+    "@atlaskit/blanket": "^12.1.0",
+    "@atlaskit/button": "^16.0.0",
+    "@atlaskit/flag": "^14.4.0",
+    "@atlaskit/form": "^8.4.0",
+    "@atlaskit/icon": "^21.9.0",
+    "@atlaskit/modal-dialog": "^12.0.0",
+    "@atlaskit/textfield": "^5.0.1",
+    "@atlaskit/theme": "^12.0.0",
+    "@atlassian/package-88": "^2.2.2",
+    "@atlassian/package-90": "^1.0.8",
+    "@atlassian/package-91": "^1.12.0",
+    "@atlassian/package-95": "^0.20.0",
+    "@atlassian/package-99": "^1.21.0",
+    "@atlassian/package-102": "^3.10.0",
+    "@atlassian/package-113": "^1.1.0",
+    "@atlassian/package-116": "^1.5.0",
+    "@atlassian/package-121": "^4.2.0",
+    "@atlassian/package-124": "^2.4.0",
+    "@atlassian/package-126": "^1.8.0",
+    "@babel/runtime": "^7.0.0",
+    "react-intl": "^2.6.0",
+    "react-resource-router": "^0.14.2",
+    "styled-components": "^3.2.6"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "devDependencies": {
+    "@atlassian/package-115": "^0.1.0",
+    "@atlassian/package-125": "^1.0.12",
+    "@atlassian/package-183": "^0.1.3",
+    "@storybook/addon-actions": "^5.2.5",
+    "@testing-library/react": "^8.0.1",
+    "@testing-library/react-hooks": "^1.0.4",
+    "enzyme": "^3.10.0",
+    "typescript": "3.9.6"
+  },
+  "techstack": {
+    "@atlassian/frontend": {
+      "code-structure": [
+        "tangerine-next"
+      ],
+      "import-structure": [
+        "atlassian-conventions"
+      ],
+      "circular-dependencies": [
+        "file-and-folder-level"
+      ]
+    },
+    "@repo/internal": {
+      "analytics": [
+        "analytics-next"
+      ],
+      "theming": [
+        "new-theming-api"
+      ],
+      "ui-components": [
+        "lite-mode"
+      ],
+      "deprecation": [
+        "no-deprecated-imports"
+      ]
+    }
+  }
+}

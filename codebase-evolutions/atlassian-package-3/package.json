@@ -1,0 +1,14 @@
+{
+  "name": "@atlassian/package-3",
+  "version": "1.0.1",
+  "main": "./index.js",
+  "publishConfig": {
+    "registry": "https://packages.atlassian.com/api/npm/npm-remote"
+  },
+  "af:exports": {
+    "index": "./index"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "peerDependencies": {}
+}

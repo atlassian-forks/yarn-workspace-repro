@@ -1,0 +1,78 @@
+{
+  "name": "@atlaskit/code",
+  "version": "14.1.4",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "license": "Apache-2.0",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "module:es2019": "dist/es2019/index.js",
+  "types": "dist/types/index.d.ts",
+  "sideEffects": false,
+  "atlaskit:src": "src/index.ts",
+  "config": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@atlaskit/codemod-utils": "^3.4.0",
+    "@atlaskit/theme": "^12.0.0",
+    "@babel/runtime": "^7.0.0",
+    "@emotion/core": "^10.0.9",
+    "memoize-one": "^5.1.0",
+    "react-syntax-highlighter": "^15.4.3"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
+  },
+  "devDependencies": {
+    "@atlaskit/package-2": "*",
+    "@atlaskit/button": "^16.0.0",
+    "@atlaskit/docs": "^9.0.0",
+    "@atlaskit/section-message": "^6.0.0",
+    "@atlaskit/package-8": "*",
+    "@atlaskit/package-9": "*",
+    "@testing-library/react": "^8.0.1",
+    "@types/jscodeshift": "^0.11.0",
+    "@types/react-syntax-highlighter": "^13.5.0",
+    "color-contrast-checker": "^1.5.0",
+    "jscodeshift": "^0.13.0",
+    "prismjs": "^1.23.0",
+    "react-dom": "^16.8.0",
+    "typescript": "3.9.6"
+  },
+  "keywords": [
+    "atlaskit",
+    "react",
+    "ui"
+  ],
+  "af:exports": {
+    "./types": "./src/entry-points/types.ts",
+    ".": "./src/index.ts",
+    "./block": "./src/entry-points/block.ts",
+    "./inline": "./src/entry-points/inline.ts",
+    "./constants": "./src/entry-points/constants.ts"
+  },
+  "techstack": {
+    "@atlassian/frontend": {
+      "import-structure": "atlassian-conventions"
+    },
+    "@repo/internal": {
+      "ui-components": [
+        "lite-mode"
+      ],
+      "analytics": [
+        "analytics-next"
+      ],
+      "theming": [
+        "new-theming-api"
+      ],
+      "deprecation": [
+        "no-deprecated-imports"
+      ]
+    }
+  },
+  "homepage": "https://atlassian.design/components/code/"
+}

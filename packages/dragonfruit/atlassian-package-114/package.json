@@ -1,0 +1,58 @@
+{
+  "name": "@atlassian/package-114",
+  "version": "1.0.0",
+  "private": true,
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "module:es2019": "dist/es2019/index.js",
+  "types": "dist/types/index.d.ts",
+  "sideEffects": false,
+  "atlaskit:src": "src/index.ts",
+  "dependencies": {
+    "@atlassian/package-201": "^3.5.2",
+    "@atlassian/package-99": "^1.15.0",
+    "@atlassiansox/package-18": "^3.0.0",
+    "@atlassiansox/package-19": "^7.0.0",
+    "@babel/runtime": "^7.0.0",
+    "react-resource-router": "^0.14.2"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
+  },
+  "techstack": {
+    "@atlassian/frontend": {
+      "code-structure": [
+        "tangerine-next"
+      ],
+      "import-structure": [
+        "atlassian-conventions"
+      ],
+      "circular-dependencies": [
+        "file-and-folder-level"
+      ]
+    },
+    "@repo/internal": {
+      "analytics": [
+        "analytics-next"
+      ],
+      "theming": [
+        "new-theming-api"
+      ],
+      "ui-components": [
+        "lite-mode"
+      ],
+      "deprecation": [
+        "no-deprecated-imports"
+      ]
+    }
+  },
+  "af:exports": {
+    ".": "./src/index.ts"
+  },
+  "devDependencies": {
+    "@testing-library/react-hooks": "^1.0.4",
+    "typescript": "3.9.6"
+  }
+}

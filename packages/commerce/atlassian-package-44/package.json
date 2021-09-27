@@ -1,0 +1,44 @@
+{
+  "name": "@atlassian/package-44",
+  "version": "5.0.1",
+  "publishConfig": {
+    "registry": "https://packages.atlassian.com/api/npm/npm-remote"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "module:es2019": "dist/es2019/index.js",
+  "types": "dist/types/index.d.ts",
+  "sideEffects": false,
+  "atlaskit:src": "src/index.ts",
+  "dependencies": {
+    "@atlassian/package-45": "2.0.4",
+    "@atlassian/package-71": "2.0.0",
+    "@atlassian/package-76": "1.0.2",
+    "@babel/runtime": "^7.0.0",
+    "uuid": "^3.1.0"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
+  },
+  "devDependencies": {
+    "@atlaskit/docs": "*",
+    "@atlaskit/section-message": "^6.0.0",
+    "@atlaskit/package-9": "*",
+    "@atlassian/package-75": "1.0.4",
+    "@testing-library/react": "^8.0.1",
+    "@testing-library/react-hooks": "^1.0.4",
+    "typescript": "3.9.6"
+  },
+  "techstack": {
+    "@atlassian/frontend": {
+      "code-structure": "tangerine-next",
+      "import-structure": "atlassian-conventions"
+    }
+  },
+  "af:exports": {
+    "./mocks": "./src/mocks.ts",
+    ".": "./src/index.ts"
+  }
+}

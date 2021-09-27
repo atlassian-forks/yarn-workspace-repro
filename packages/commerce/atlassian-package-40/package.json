@@ -1,0 +1,48 @@
+{
+  "name": "@atlassian/package-40",
+  "version": "0.0.7",
+  "private": true,
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "module:es2019": "dist/es2019/index.js",
+  "types": "dist/types/index.d.ts",
+  "sideEffects": false,
+  "atlaskit:src": "src/index.ts",
+  "af:exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@atlassian/package-37": "^7.0.0",
+    "@atlassian/package-38": "^3.0.0",
+    "@atlassian/package-44": "^5.0.0",
+    "@atlassian/package-45": "^2.0.0",
+    "@atlassian/package-65": "^6.0.0",
+    "@atlassian/package-66": "^3.0.0",
+    "@babel/runtime": "^7.0.0",
+    "@pact-foundation/pact": "^9.15.5",
+    "node-fetch": "^2.6.1",
+    "query-string": "^5.1.0"
+  },
+  "stricter": {
+    "no-unused-dependencies": {
+      "exclude": [
+        "@atlassian/commerce-billing-details",
+        "@atlassian/commerce-billing-history",
+        "@atlassian/commerce-entitlements",
+        "@atlassian/commerce-environment",
+        "@atlassian/commerce-payment-flow",
+        "@atlassian/commerce-payment-methods",
+        "@atlassian/contract-testing-cli"
+      ]
+    }
+  },
+  "devDependencies": {
+    "@atlaskit/package-2": "*",
+    "@atlaskit/docs": "*",
+    "glob": "^7.1.2",
+    "typescript": "3.9.6"
+  },
+  "techstack": {},
+  "peerDependencies": {}
+}

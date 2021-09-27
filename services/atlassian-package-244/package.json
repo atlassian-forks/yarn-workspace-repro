@@ -1,0 +1,11 @@
+{
+  "name": "@atlassian/package-244",
+  "version": "1.0.1",
+  "private": true,
+  "license": "Apache-2.0",
+  "sideEffects": false,
+  "author": "Atlassian Pty Ltd",
+  "devDependencies": {},
+  "dependencies": {},
+  "peerDependencies": {}
+}

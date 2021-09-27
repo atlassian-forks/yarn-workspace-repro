@@ -1,0 +1,33 @@
+{
+  "name": "@atlaskit/updater-cli",
+  "version": "2.0.15",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "license": "Apache-2.0",
+  "sideEffects": false,
+  "bin": {
+    "akup": "./bin/akup.js"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.0.0",
+    "chalk": "^2.1.0",
+    "meow": "^6.0.0",
+    "node-fetch": "^2.6.1",
+    "ora": "^3.0.0",
+    "semver": "^7.3.0",
+    "terminal-link": "^1.2.0",
+    "yarn-deduplicate": "^3.1.0"
+  },
+  "devDependencies": {
+    "@types/chalk": "^2.2.0",
+    "@types/node-fetch": "^2.5.8",
+    "@types/ora": "^1.3.4",
+    "@types/semver": "^7.3.0",
+    "ts-node": "^10.0.0",
+    "typescript": "3.9.6"
+  },
+  "peerDependencies": {}
+}

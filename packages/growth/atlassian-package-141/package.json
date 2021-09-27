@@ -1,0 +1,81 @@
+{
+  "name": "@atlassian/package-141",
+  "version": "11.0.1",
+  "publishConfig": {
+    "registry": "https://packages.atlassian.com/api/npm/npm-remote"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "module:es2019": "dist/es2019/index.js",
+  "types": "dist/types/index.d.ts",
+  "sideEffects": false,
+  "atlaskit:src": "src/index.ts",
+  "dependencies": {
+    "@atlaskit/analytics-gas-types": "^5.0.2",
+    "@atlaskit/analytics-next": "^8.0.1",
+    "@atlaskit/button": "^16.0.0",
+    "@atlaskit/checkbox": "^12.0.0",
+    "@atlaskit/icon": "^21.9.0",
+    "@atlaskit/lozenge": "^11.0.0",
+    "@atlaskit/modal-dialog": "^12.0.0",
+    "@atlaskit/progress-bar": "^0.3.5",
+    "@atlaskit/theme": "^12.0.0",
+    "@atlaskit/tooltip": "^17.5.0",
+    "@atlassian/package-84": "^0.4.1",
+    "@atlassian/package-85": "^0.3.5",
+    "@babel/runtime": "^7.0.0",
+    "bezier-easing": "^2.1.0",
+    "react-intl": "^2.6.0",
+    "react-sweet-state": "^2.1.1"
+  },
+  "peerDependencies": {
+    "@atlassiansox/package-18": "^3.5.0",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "styled-components": "^3.2.6"
+  },
+  "devDependencies": {
+    "@atlaskit/docs": "^9.0.0",
+    "@storybook/addon-actions": "^5.2.5",
+    "@storybook/addon-knobs": "^5.3.18",
+    "@storybook/addons": "^6.1.11",
+    "@storybook/react": "^6.0.0-alpha.19",
+    "@testing-library/react": "^8.0.1",
+    "@testing-library/user-event": "10.4.0",
+    "copyfiles": "^2.3.0",
+    "enzyme": "^3.10.0",
+    "fetch-mock": "^8.0.0"
+  },
+  "techstack": {
+    "@atlassian/frontend": {
+      "code-structure": [
+        "tangerine-next"
+      ],
+      "import-structure": [
+        "atlassian-conventions"
+      ],
+      "circular-dependencies": [
+        "file-and-folder-level"
+      ]
+    },
+    "@repo/internal": {
+      "analytics": [
+        "analytics-next"
+      ],
+      "theming": [
+        "new-theming-api"
+      ],
+      "ui-components": [
+        "lite-mode"
+      ],
+      "deprecation": [
+        "no-deprecated-imports"
+      ]
+    }
+  },
+  "af:exports": {
+    ".": "./src/index.ts"
+  }
+}

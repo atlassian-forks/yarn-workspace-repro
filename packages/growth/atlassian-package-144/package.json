@@ -1,0 +1,59 @@
+{
+  "name": "@atlassian/package-144",
+  "version": "3.1.12",
+  "author": "Atlassian Pty Ltd",
+  "publishConfig": {
+    "registry": "https://packages.atlassian.com/api/npm/npm-remote"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "module:es2019": "dist/es2019/index.js",
+  "types": "dist/types/index.d.ts",
+  "sideEffects": false,
+  "atlaskit:src": "src/index.ts",
+  "af:exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@atlaskit/analytics-gas-types": "^5.0.0",
+    "@atlaskit/analytics-next": "^8.2.0",
+    "@atlaskit/button": "^16.0.0",
+    "@atlaskit/flag": "^14.4.0",
+    "@atlaskit/form": "^8.4.0",
+    "@atlaskit/icon": "^21.9.0",
+    "@atlaskit/select": "^15.2.0",
+    "@atlaskit/spinner": "^15.0.6",
+    "@atlaskit/textarea": "^4.1.0",
+    "@atlassiansox/package-14": "^6.0.2",
+    "@babel/runtime": "^7.0.0",
+    "lodash": "^4.17.15",
+    "react-loadable": "^5.1.0",
+    "use-memo-one": "^1.1.1",
+    "uuid": "^3.1.0"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "react-intl": "^2.6.0",
+    "styled-components": "^3.2.6"
+  },
+  "devDependencies": {
+    "@atlaskit/docs": "*",
+    "@atlaskit/modal-dialog": "^12.0.0",
+    "@atlaskit/radio": "^5.1.0",
+    "@atlaskit/theme": "^12.0.0",
+    "@atlaskit/util-data-test": "^16.0.0",
+    "@atlaskit/package-9": "*",
+    "@testing-library/react": "^8.0.1",
+    "fetch-mock": "^8.0.0",
+    "mockdate": "^3.0.2",
+    "puppeteer": "10.1.0"
+  },
+  "techstack": {
+    "@atlassian/frontend": {
+      "tree-shaking": "atlassian-conventions",
+      "import-structure": "atlassian-conventions"
+    }
+  }
+}

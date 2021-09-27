@@ -1,0 +1,22 @@
+{
+  "name": "@af/package-25",
+  "version": "1.0.12",
+  "private": true,
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "dependencies": {},
+  "devDependencies": {
+    "@atlaskit/adf-utils": "^14.1.0",
+    "@atlaskit/package-2": "^2.8.11",
+    "@types/jest": "^26.0.14",
+    "bolt": "^0.24.8",
+    "chalk": "^2.1.0",
+    "cli-table3": "^0.5.1",
+    "markdown-table": "^2.0.0",
+    "meow": "^6.0.0",
+    "minimatch": "^3.0.4",
+    "ts-node": "^10.0.0",
+    "tsconfig-paths": "^3.9.0"
+  },
+  "peerDependencies": {}
+}

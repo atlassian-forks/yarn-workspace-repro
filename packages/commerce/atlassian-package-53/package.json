@@ -1,0 +1,49 @@
+{
+  "name": "@atlassian/package-53",
+  "version": "6.0.0",
+  "publishConfig": {
+    "registry": "https://packages.atlassian.com/api/npm/npm-remote"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "sideEffects": false,
+  "dependencies": {
+    "@atlassian/package-46": "4.0.2",
+    "@atlassian/package-47": "5.0.1",
+    "@atlassian/package-48": "5.0.1",
+    "@atlassian/package-49": "6.0.0",
+    "@atlassian/package-50": "4.0.2",
+    "@atlassian/package-51": "5.2.0",
+    "@atlassian/package-52": "4.0.0",
+    "@atlassian/package-54": "7.0.0",
+    "@atlassian/package-55": "6.0.3",
+    "@atlassian/package-56": "6.0.0",
+    "@atlassian/package-57": "3.0.1",
+    "@atlassian/package-58": "3.0.1",
+    "@babel/runtime": "^7.0.0"
+  },
+  "devDependencies": {
+    "@atlaskit/docs": "*",
+    "typescript": "3.9.6"
+  },
+  "techstack": {
+    "@atlassian/frontend": {
+      "import-structure": "atlassian-conventions"
+    }
+  },
+  "af:exports": {
+    "./gasv3-bridge": "./src/gasv3/bridge.ts",
+    "./gasv3-transformer": "./src/gasv3/transformer.ts",
+    "./metal-bridge": "./src/metal/bridge.ts",
+    "./metal-transformer": "./src/metal/transformer.ts",
+    "./sentry-browser-bridge": "./src/sentry-browser/bridge.ts",
+    "./sentry-browser-transformer": "./src/sentry-browser/transformer.ts",
+    "./atlaskit": "./src/atlaskit.ts",
+    "./breadcrumbs": "./src/breadcrumbs.ts",
+    "./bridge-utils": "./src/bridge-utils.ts",
+    "./core": "./src/core.ts",
+    "./ui-events": "./src/ui-events.ts",
+    "./timing": "./src/timing.ts"
+  },
+  "peerDependencies": {}
+}

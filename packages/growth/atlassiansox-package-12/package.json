@@ -1,0 +1,28 @@
+{
+  "name": "@atlassiansox/package-12",
+  "version": "9.1.0",
+  "publishConfig": {
+    "registry": "https://packages.atlassian.com/api/npm/npm-remote"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "module:es2019": "dist/es2019/index.js",
+  "types": "dist/types/index.d.ts",
+  "atlaskit:src": "src/index.ts",
+  "dependencies": {
+    "@atlaskit/analytics-gas-types": "^5.0.0",
+    "@atlaskit/analytics-next": "^8.0.0",
+    "@babel/runtime": "^7.0.0",
+    "eventemitter3": "^4.0.0"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
+  },
+  "devDependencies": {
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
+    "typescript": "3.9.6"
+  }
+}

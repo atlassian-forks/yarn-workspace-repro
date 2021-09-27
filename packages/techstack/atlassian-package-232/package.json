@@ -1,0 +1,53 @@
+{
+  "name": "@atlassian/package-232",
+  "version": "0.4.14",
+  "private": true,
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "sideEffects": false,
+  "dependencies": {
+    "@atlaskit/atlassian-navigation": "^1.1.0",
+    "@atlaskit/avatar": "^20.5.0",
+    "@atlaskit/button": "^16.0.0",
+    "@atlaskit/dynamic-table": "^14.1.0",
+    "@atlaskit/icon": "^21.9.0",
+    "@atlaskit/inline-dialog": "^13.0.0",
+    "@atlaskit/logo": "^13.5.0",
+    "@atlaskit/lozenge": "^11.0.0",
+    "@atlaskit/modal-dialog": "^12.0.0",
+    "@atlaskit/popup": "^1.1.0",
+    "@atlaskit/router": "^0.13.0",
+    "@atlaskit/select": "^15.2.0",
+    "@atlaskit/spinner": "^15.0.0",
+    "@atlaskit/theme": "^12.0.0",
+    "@atlaskit/toggle": "^12.3.0",
+    "@atlaskit/tooltip": "^17.5.0",
+    "@emotion/styled": "^10.0.7",
+    "history": "4.10.1",
+    "lodash": "^4.17.15",
+    "react-markdown": "^3.6.0",
+    "react-sweet-state": "^2.1.1"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "techstack": {
+    "@atlassian/frontend": {
+      "import-structure": "atlassian-conventions"
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {}
+}

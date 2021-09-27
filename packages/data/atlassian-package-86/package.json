@@ -1,0 +1,54 @@
+{
+  "name": "@atlassian/package-86",
+  "version": "0.0.4",
+  "author": "Atlassian Pty Ltd",
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "publishConfig": {
+    "registry": "https://packages.atlassian.com/api/npm/npm-remote"
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "module:es2019": "dist/es2019/index.js",
+  "types": "dist/types/index.d.ts",
+  "sideEffects": false,
+  "atlaskit:src": "src/index.ts",
+  "af:exports": {
+    "./global-stream-buffer": "./src/global-stream-buffer/index.ts",
+    "./logger": "./src/logger/index.ts",
+    "./platform-client": "./src/platform-client/index.ts",
+    "./types": "./src/types.ts",
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.0.0",
+    "uuid": "^3.1.0"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
+  },
+  "devDependencies": {
+    "@atlaskit/package-2": "*",
+    "@atlaskit/docs": "*",
+    "@atlaskit/package-8": "*",
+    "@atlaskit/package-9": "*",
+    "@atlaskit/package-10": "*",
+    "@testing-library/react": "^8.0.1",
+    "typescript": "3.9.6",
+    "wait-for-expect": "^1.2.0"
+  },
+  "techstack": {
+    "@atlassian/frontend": {
+      "import-structure": [
+        "atlassian-conventions"
+      ],
+      "circular-dependencies": [
+        "file-and-folder-level"
+      ]
+    },
+    "@repo/internal": {
+      "deprecation": [
+        "no-deprecated-imports"
+      ]
+    }
+  }
+}

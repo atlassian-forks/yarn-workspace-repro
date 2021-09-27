@@ -1,0 +1,58 @@
+{
+  "name": "@atlassian/package-13",
+  "version": "0.14.1",
+  "publishConfig": {
+    "registry": "https://packages.atlassian.com/api/npm/atlassian-npm/"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "module:es2019": "dist/es2019/index.js",
+  "types": "dist/types/index.d.ts",
+  "atlaskit:src": "src/index.ts",
+  "dependencies": {
+    "@atlaskit/analytics-next": "^8.2.0",
+    "@atlaskit/button": "^16.0.0",
+    "@atlaskit/code": "^14.1.0",
+    "@atlaskit/flag": "^14.4.0",
+    "@atlaskit/icon": "^21.9.0",
+    "@atlaskit/inline-dialog": "^13.0.4",
+    "@atlaskit/modal-dialog": "^12.0.0",
+    "@atlaskit/select": "^15.2.0",
+    "@atlaskit/tabs": "^13.0.0",
+    "@atlaskit/textarea": "^4.1.0",
+    "@atlaskit/textfield": "^5.0.0",
+    "@atlaskit/theme": "^12.0.0",
+    "@atlaskit/tooltip": "^17.5.0",
+    "@atlassian/package-20": "^0.2.0",
+    "@atlassian/package-21": "^0.16.0",
+    "@babel/runtime": "^7.0.0",
+    "@types/clipboard": "^2.0.1",
+    "codemirror": "^5.56.0",
+    "markdown-it": "^10.0.0",
+    "markdown-it-for-inline": "^0.1.1",
+    "react-animate-height": "^2.0.5",
+    "react-codemirror2": "^7.2.1",
+    "react-use-clipboard": "^1.0.0"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "styled-components": "^3.2.6"
+  },
+  "devDependencies": {
+    "@atlaskit/docs": "*",
+    "@storybook/react": "^6.0.0-alpha.19",
+    "@testing-library/react": "^8.0.1",
+    "enzyme": "^3.10.0",
+    "typescript": "3.9.6"
+  },
+  "techstack": {
+    "@atlassian/frontend": {
+      "import-structure": "atlassian-conventions"
+    }
+  },
+  "af:exports": {
+    ".": "./src/index.ts"
+  }
+}

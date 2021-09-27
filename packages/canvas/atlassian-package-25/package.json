@@ -1,0 +1,23 @@
+{
+  "name": "@atlassian/package-25",
+  "version": "1.0.1",
+  "author": "Atlassian Pty Ltd",
+  "private": true,
+  "bin": {
+    "canvas-faker": "./bin/canvas-faker.js"
+  },
+  "af:exports": {
+    "./generate-document": "./src/generate-document.ts"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "sideEffects": false,
+  "dependencies": {
+    "@types/yargs": "^15.0.5",
+    "faker": "^4.1.0",
+    "yargs": "^15.3.1"
+  },
+  "devDependencies": {
+    "ts-node": "^10.0.0"
+  },
+  "peerDependencies": {}
+}

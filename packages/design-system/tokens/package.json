@@ -1,0 +1,44 @@
+{
+  "name": "@atlaskit/tokens",
+  "version": "0.2.1",
+  "author": "Atlassian Pty Ltd",
+  "license": "Apache-2.0",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "module:es2019": "dist/es2019/index.js",
+  "types": "dist/types/index.d.ts",
+  "sideEffects": false,
+  "atlaskit:src": "src/index.tsx",
+  "af:exports": {
+    ".": "./src/index.tsx",
+    "./token-names": "./src/entry-points/token-names.tsx",
+    "./token-default-values": "./src/entry-points/token-default-values.tsx",
+    "./rename-mapping": "./src/entry-points/rename-mapping.tsx"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.0.0"
+  },
+  "devDependencies": {
+    "lodash": "^4.17.15",
+    "prettier": "^2.1.1",
+    "style-dictionary": "^3.0.0",
+    "ts-node": "^10.0.0",
+    "typescript": "3.9.6"
+  },
+  "techstack": {
+    "@atlassian/frontend": {
+      "import-structure": "atlassian-conventions",
+      "circular-dependencies": "file-and-folder-level"
+    },
+    "@repo/internal": {
+      "design-system": "v1",
+      "ui-components": "lite-mode",
+      "deprecation": "no-deprecated-imports"
+    }
+  },
+  "peerDependencies": {}
+}

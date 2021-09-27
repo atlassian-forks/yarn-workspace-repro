@@ -1,0 +1,69 @@
+{
+  "name": "@atlassian/package-142",
+  "version": "7.0.1",
+  "publishConfig": {
+    "registry": "https://packages.atlassian.com/api/npm/npm-remote"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "module:es2019": "dist/es2019/index.js",
+  "types": "dist/types/index.d.ts",
+  "sideEffects": false,
+  "atlaskit:src": "src/index.ts",
+  "dependencies": {
+    "@atlaskit/analytics-gas-types": "^5.0.2",
+    "@atlaskit/analytics-next": "^8.0.1",
+    "@atlaskit/button": "^16.0.0",
+    "@atlaskit/checkbox": "^12.0.0",
+    "@atlaskit/lozenge": "^11.0.0",
+    "@atlaskit/theme": "^12.0.0",
+    "@atlassian/package-84": "^0.4.1",
+    "@atlassian/package-85": "^0.3.5",
+    "@atlassian/package-141": "^11.0.0",
+    "@babel/runtime": "^7.0.0",
+    "@storybook/addon-actions": "^5.2.5"
+  },
+  "peerDependencies": {
+    "@atlassiansox/package-18": "^3.5.0",
+    "react": "^16.8.0",
+    "react-intl": "^2.6.0",
+    "styled-components": "^3.2.6"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^8.0.1",
+    "react-dom": "^16.8.0",
+    "typescript": "3.9.6"
+  },
+  "techstack": {
+    "@atlassian/frontend": {
+      "code-structure": [
+        "tangerine-next"
+      ],
+      "import-structure": [
+        "atlassian-conventions"
+      ],
+      "circular-dependencies": [
+        "file-and-folder-level"
+      ]
+    },
+    "@repo/internal": {
+      "analytics": [
+        "analytics-next"
+      ],
+      "theming": [
+        "new-theming-api"
+      ],
+      "ui-components": [
+        "lite-mode"
+      ],
+      "deprecation": [
+        "no-deprecated-imports"
+      ]
+    }
+  },
+  "af:exports": {
+    ".": "./src/index.ts"
+  }
+}

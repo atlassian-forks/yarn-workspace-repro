@@ -1,0 +1,46 @@
+{
+  "name": "@atlassian/package-42",
+  "version": "2.2.2",
+  "publishConfig": {
+    "registry": "https://packages.atlassian.com/api/npm/npm-remote"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "module:es2019": "dist/es2019/index.js",
+  "types": "dist/types/index.d.ts",
+  "sideEffects": false,
+  "atlaskit:src": "src/index.ts",
+  "dependencies": {
+    "@atlassian/package-41": "5.1.2",
+    "@atlassian/package-45": "2.0.4",
+    "@atlassian/package-66": "3.0.0",
+    "@atlassian/package-76": "1.0.2",
+    "@babel/runtime": "^7.0.0",
+    "@stripe/stripe-js": "^1.13.1"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
+  },
+  "devDependencies": {
+    "@atlaskit/button": "^16.1.0",
+    "@atlaskit/docs": "*",
+    "@atlaskit/package-9": "*",
+    "@atlassian/package-75": "1.0.4",
+    "@testing-library/react": "^8.0.1",
+    "typescript": "3.9.6"
+  },
+  "techstack": {
+    "@atlassian/frontend": {
+      "code-structure": "tangerine-next",
+      "import-structure": "atlassian-conventions"
+    }
+  },
+  "af:exports": {
+    "./mocks": "./src/mocks.ts",
+    ".": "./src/index.ts",
+    "./telemetry-listeners": "./src/common/utils/telemetry-listeners/index.ts",
+    "./telemetry-integrations": "./src/common/utils/telemetry-integrations/index.ts"
+  }
+}

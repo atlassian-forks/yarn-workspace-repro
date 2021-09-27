@@ -1,0 +1,25 @@
+{
+  "name": "@atlassian/package-226",
+  "version": "0.2.0",
+  "publishConfig": {
+    "registry": "https://packages.atlassian.com/api/npm/npm-remote"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "main": "src/index.js",
+  "sideEffects": false,
+  "dependencies": {
+    "eslint": "^7.7.0",
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "^4.4.1",
+    "babel-eslint": "^10.0.3"
+  },
+  "techstack": {
+    "@atlassian/frontend": {
+      "import-structure": "atlassian-conventions"
+    }
+  },
+  "peerDependencies": {}
+}

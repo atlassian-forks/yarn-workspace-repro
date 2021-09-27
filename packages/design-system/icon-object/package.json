@@ -1,0 +1,50 @@
+{
+  "name": "@atlaskit/icon-object",
+  "version": "6.2.5",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "license": "Apache-2.0",
+  "atlaskit:src": "src/index.ts",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "module:es2019": "dist/es2019/index.js",
+  "types": "dist/types/index.d.ts",
+  "sideEffects": false,
+  "af:exports": {
+    "./metadata": "./src/entry-points/metadata.ts",
+    "./glyph": "./glyph",
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@atlaskit/icon": "^21.9.0",
+    "@babel/runtime": "^7.0.0"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
+  },
+  "devDependencies": {
+    "@af/package-22": "^0.3.0",
+    "@atlaskit/package-2": "*",
+    "@atlaskit/button": "^16.0.0",
+    "@atlaskit/docs": "*",
+    "@atlaskit/modal-dialog": "^12.0.0",
+    "@atlaskit/package-8": "*",
+    "@atlaskit/textfield": "^5.0.0",
+    "@atlaskit/theme": "^12.0.0",
+    "@atlaskit/tooltip": "^17.5.0",
+    "@atlaskit/package-9": "*",
+    "@emotion/styled": "^10.0.7",
+    "enzyme": "^3.10.0",
+    "fs-extra": "^4.0.2",
+    "jscodeshift": "^0.13.0",
+    "pkg-dir": "^4.2.0",
+    "react-dom": "^16.8.0"
+  },
+  "keywords": [
+    "atlaskit",
+    "ui"
+  ]
+}

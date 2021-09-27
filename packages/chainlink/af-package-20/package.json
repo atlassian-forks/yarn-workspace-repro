@@ -1,0 +1,24 @@
+{
+  "name": "@af/package-20",
+  "version": "0.0.11",
+  "private": true,
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "main": "src/index.ts",
+  "sideEffects": false,
+  "dependencies": {
+    "@af/package-17": "^0.0.11",
+    "@atlaskit/router": "^0.13.0",
+    "@atlassian/package-222": "^0.2.0",
+    "react-loosely-lazy": "^0.5.0"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
+  },
+  "techstack": {
+    "@atlassian/frontend": {
+      "import-structure": "atlassian-conventions"
+    }
+  },
+  "devDependencies": {}
+}

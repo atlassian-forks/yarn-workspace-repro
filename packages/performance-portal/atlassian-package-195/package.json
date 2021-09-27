@@ -1,0 +1,68 @@
+{
+  "name": "@atlassian/package-195",
+  "version": "0.0.12",
+  "private": true,
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "main": "src/index.tsx",
+  "sideEffects": false,
+  "dependencies": {
+    "@apollo/client": "^3.1.3",
+    "@atlaskit/analytics-next": "^8.2.0",
+    "@atlaskit/button": "^16.0.0",
+    "@atlaskit/calendar": "^12.0.0",
+    "@atlaskit/checkbox": "^12.2.1",
+    "@atlaskit/dropdown-menu": "^10.1.2",
+    "@atlaskit/form": "^8.4.0",
+    "@atlaskit/icon": "^21.9.0",
+    "@atlaskit/lozenge": "^11.0.0",
+    "@atlaskit/menu": "^1.1.0",
+    "@atlaskit/popup": "^1.1.0",
+    "@atlaskit/select": "^15.2.0",
+    "@atlaskit/spinner": "^15.0.6",
+    "@atlaskit/theme": "^12.0.0",
+    "@atlaskit/tooltip": "^17.5.0",
+    "@atlassian/package-201": "^3.0.22",
+    "@atlassian/package-185": "^0.0.9",
+    "@atlassian/package-187": "^0.0.30",
+    "@atlassian/package-188": "^0.0.9",
+    "@atlassian/package-193": "^0.1.0",
+    "@atlassian/package-194": "^0.1.0",
+    "@atlassian/package-196": "^2.0.1",
+    "@atlassian/package-197": "^0.0.2",
+    "@emotion/styled": "^10.0.7",
+    "d3-scale": "^3.2.3",
+    "date-fns": "^2.17.0",
+    "lodash": "^4.17.15",
+    "react-helmet": "^6.1.0",
+    "react-loosely-lazy": "^0.5.0",
+    "react-relay": "^11.0.2",
+    "react-sweet-state": "^2.1.1",
+    "recharts": "^1.8.5",
+    "serialize-query-params": "^1.2.3"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
+  },
+  "techstack": {
+    "@atlassian/frontend": {
+      "code-structure": "tangerine-next",
+      "import-structure": "atlassian-conventions"
+    }
+  },
+  "af:exports": {
+    ".": "./src/index.ts"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^1.20.1",
+    "@graphql-codegen/typescript": "^1.21.0",
+    "@graphql-codegen/typescript-operations": "^1.17.14",
+    "@graphql-codegen/typescript-react-apollo": "^2.2.1",
+    "@types/react-relay": "^11.0.2",
+    "@types/recharts": "^1.8.14",
+    "concurrently": "^6.0.0",
+    "relay-compiler": "^11.0.2",
+    "relay-compiler-language-typescript": "^13.0.10",
+    "relay-config": "^11.0.2"
+  }
+}

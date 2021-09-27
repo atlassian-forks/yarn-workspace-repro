@@ -1,0 +1,62 @@
+{
+  "name": "@atlassian/package-37",
+  "version": "7.1.0",
+  "publishConfig": {
+    "registry": "https://packages.atlassian.com/api/npm/npm-remote"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "module:es2019": "dist/es2019/index.js",
+  "types": "dist/types/index.d.ts",
+  "sideEffects": false,
+  "atlaskit:src": "src/index.ts",
+  "dependencies": {
+    "@atlaskit/button": "^16.0.0",
+    "@atlaskit/checkbox": "^12.2.0",
+    "@atlaskit/form": "^8.4.0",
+    "@atlaskit/inline-message": "^11.1.0",
+    "@atlaskit/section-message": "^6.0.0",
+    "@atlaskit/select": "^15.0.0",
+    "@atlaskit/textfield": "^5.0.0",
+    "@atlaskit/theme": "^12.0.0",
+    "@atlassian/package-45": "2.0.4",
+    "@atlassian/package-53": "6.0.0",
+    "@atlassian/package-59": "^0.0.8",
+    "@atlassian/package-61": "^2.0.0",
+    "@atlassian/package-63": "1.0.1",
+    "@atlassian/package-71": "2.0.0",
+    "@atlassian/package-72": "4.0.0",
+    "@atlassian/package-73": "^0.1.2",
+    "@atlassian/package-76": "1.0.2",
+    "@babel/runtime": "^7.0.0",
+    "@emotion/styled": "^10.0.7",
+    "final-form": "^4.20.1"
+  },
+  "peerDependencies": {
+    "@atlassian/package-75": "1.0.4",
+    "react": "^16.8.0"
+  },
+  "devDependencies": {
+    "@atlaskit/docs": "*",
+    "@atlaskit/package-9": "*",
+    "@atlassian/package-74": "2.0.0",
+    "@atlassian/package-75": "1.0.4",
+    "@testing-library/react": "^8.0.1",
+    "typescript": "3.9.6"
+  },
+  "techstack": {
+    "@atlassian/frontend": {
+      "code-structure": "tangerine-next",
+      "import-structure": "atlassian-conventions"
+    }
+  },
+  "af:exports": {
+    ".": "./src/index.ts",
+    "./mocks": "./src/mocks.ts",
+    "./page-objects": "./src/common/utils/page-objects/index.ts",
+    "./telemetry-listeners": "./src/common/utils/telemetry-listeners/index.ts",
+    "./telemetry-integrations": "./src/common/utils/telemetry-integrations/index.ts"
+  }
+}

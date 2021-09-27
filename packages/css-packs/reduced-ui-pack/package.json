@@ -1,0 +1,41 @@
+{
+  "name": "@atlaskit/reduced-ui-pack",
+  "version": "14.0.1",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "license": "Apache-2.0",
+  "main": "dist/bundle.css",
+  "module": "dist/bundle.css",
+  "module:es2019": "dist/bundle.css",
+  "atlaskit:src": "src/bundle.css",
+  "atlaskit:designLink": "https://atlassian.design/guidelines/product/overview",
+  "files": [
+    "dist/bundle.css",
+    "dist/icons-sprite.svg"
+  ],
+  "dependencies": {
+    "@atlaskit/theme": "^12.0.0",
+    "fbjs": "^3.0.0"
+  },
+  "peerDependencies": {
+    "@atlaskit/css-reset": "^6.1.4"
+  },
+  "devDependencies": {
+    "@atlaskit/docs": "*",
+    "@atlaskit/icon": "^21.9.0",
+    "@atlaskit/section-message": "^6.0.0",
+    "bolt": "^0.24.8",
+    "glob": "^7.1.2",
+    "jsdom": "^16.2.2",
+    "mkdirp": "^0.5.1",
+    "react": "^16.8.0",
+    "svg-sprite": "^1.4.0",
+    "ts-node": "^10.0.0"
+  },
+  "af:exports": {
+    ".": "./src/bundle.css"
+  }
+}

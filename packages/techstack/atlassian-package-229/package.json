@@ -1,0 +1,23 @@
+{
+  "name": "@atlassian/package-229",
+  "version": "0.1.9",
+  "publishConfig": {
+    "registry": "https://packages.atlassian.com/api/npm/npm-remote"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "main": "src/index.js",
+  "sideEffects": false,
+  "dependencies": {
+    "lodash": "^4.17.15"
+  },
+  "peerDependencies": {
+    "stricter": "^0.5.0"
+  },
+  "techstack": {
+    "@atlassian/frontend": {
+      "import-structure": "atlassian-conventions"
+    }
+  },
+  "devDependencies": {}
+}

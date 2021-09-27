@@ -1,0 +1,55 @@
+{
+  "name": "@atlassian/package-199",
+  "version": "1.0.113",
+  "private": true,
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "main": "src/index.ts",
+  "sideEffects": false,
+  "dependencies": {
+    "@atlaskit/atlassian-navigation": "^1.1.0",
+    "@atlaskit/avatar": "^20.5.0",
+    "@atlaskit/button": "^16.0.0",
+    "@atlaskit/css-reset": "^6.1.0",
+    "@atlaskit/flag": "^14.4.0",
+    "@atlaskit/icon": "^21.9.0",
+    "@atlaskit/logo": "^13.5.0",
+    "@atlaskit/menu": "^1.1.0",
+    "@atlaskit/popup": "^1.1.0",
+    "@atlaskit/theme": "^12.0.0",
+    "@atlassian/package-201": "3.5.6",
+    "@atlassian/package-185": "^0.0.9",
+    "@atlassian/package-186": "^1.0.2",
+    "@atlassian/package-187": "^0.0.30",
+    "@atlassian/package-188": "^0.0.9",
+    "@atlassian/package-190": "^0.0.3",
+    "@atlassian/package-192": "^0.0.138",
+    "@atlassian/package-194": "^0.1.0",
+    "@atlassian/package-195": "^0.0.12",
+    "@atlassian/package-198": "^0.0.63",
+    "@atlassian/package-200": "^0.1.0",
+    "@emotion/styled": "^10.0.7",
+    "react-loosely-lazy": "^0.5.0",
+    "react-relay": "^11.0.2",
+    "react-resource-router": "^0.14.2"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
+  },
+  "techstack": {
+    "@atlassian/frontend": {
+      "code-structure": "tangerine-next",
+      "import-structure": "atlassian-conventions"
+    }
+  },
+  "af:exports": {
+    ".": "./src/index.ts"
+  },
+  "devDependencies": {
+    "@types/react-relay": "^11.0.2",
+    "concurrently": "^6.0.0",
+    "relay-compiler": "^11.0.2",
+    "relay-compiler-language-typescript": "^13.0.10",
+    "relay-config": "^11.0.2"
+  }
+}

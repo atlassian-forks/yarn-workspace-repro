@@ -1,0 +1,21 @@
+{
+  "name": "@af/package-10",
+  "version": "1.1.1",
+  "main": "dist/main.js",
+  "contributors": [
+    "Alex H",
+    "Safira N"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "3.9.6"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "puppeteer": "10.1.0",
+    "storybook-addon-performance-cli": "^1.0.0",
+    "wait-on": "^5.3.0"
+  },
+  "private": true,
+  "peerDependencies": {}
+}

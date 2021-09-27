@@ -1,0 +1,40 @@
+{
+  "name": "@atlaskit/package-22",
+  "version": "5.6.33",
+  "private": true,
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "license": "Apache-2.0",
+  "sideEffects": false,
+  "bin": {
+    "branch-deploy-product-integrator": "./bin/branch-deploy-product-integrator.js"
+  },
+  "dependencies": {
+    "@atlaskit/package-2": "^2.6.0",
+    "@atlaskit/codemod-cli": "^0.7.0",
+    "@atlaskit/package-15": "^0.5.0",
+    "@changesets/get-release-plan": "^2.0.0",
+    "@types/node": "~12.0.12",
+    "@types/url-parse": "^1.4.3",
+    "bolt": "^0.24.8",
+    "chalk": "^2.1.0",
+    "meow": "^6.0.0",
+    "projector-spawn": "^1.0.1",
+    "simple-git": "^1.130.0",
+    "tslib": "^2.0.0",
+    "yarn-deduplicate": "^3.1.0"
+  },
+  "devDependencies": {
+    "@types/chalk": "^2.2.0",
+    "@types/node-fetch": "^2.5.8",
+    "@types/ora": "^1.3.4",
+    "@types/semver": "^7.3.0",
+    "axios": "^0.21.1",
+    "httplease-asap": "^0.3.2",
+    "ts-node": "^10.0.0"
+  },
+  "af:exports": {
+    "./constants": "./src/constants.ts"
+  },
+  "peerDependencies": {}
+}

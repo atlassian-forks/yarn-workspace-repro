@@ -1,0 +1,25 @@
+{
+  "name": "@atlassian/package-189",
+  "version": "0.0.3",
+  "private": true,
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "main": "src/index.ts",
+  "sideEffects": false,
+  "dependencies": {
+    "@atlaskit/form": "^8.3.0",
+    "@atlaskit/select": "^15.1.0"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
+  },
+  "techstack": {
+    "@atlassian/frontend": {
+      "import-structure": "atlassian-conventions"
+    }
+  },
+  "af:exports": {
+    ".": "./src/index.ts"
+  },
+  "devDependencies": {}
+}

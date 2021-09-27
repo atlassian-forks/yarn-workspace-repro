@@ -1,0 +1,64 @@
+{
+  "name": "@atlaskit/onboarding",
+  "version": "10.2.4",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "license": "Apache-2.0",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "module:es2019": "dist/es2019/index.js",
+  "types": "dist/types/index.d.ts",
+  "sideEffects": false,
+  "atlaskit:src": "src/index.tsx",
+  "dependencies": {
+    "@atlaskit/analytics-next": "^8.0.0",
+    "@atlaskit/button": "^16.0.0",
+    "@atlaskit/modal-dialog": "^12.0.0",
+    "@atlaskit/popper": "^5.0.0",
+    "@atlaskit/portal": "^4.0.0",
+    "@atlaskit/theme": "^12.0.0",
+    "@babel/runtime": "^7.0.0",
+    "@emotion/core": "^10.0.9",
+    "exenv": "^1.2.2",
+    "memoize-one": "^5.1.0",
+    "react-focus-lock": "^1.19.1",
+    "react-node-resolver": "^1.0.1",
+    "react-scrolllock": "^5.0.1",
+    "react-transition-group": "^4.4.1",
+    "scroll-into-view-if-needed": "^2.2.20"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "devDependencies": {
+    "@atlaskit/package-2": "*",
+    "@atlaskit/docs": "*",
+    "@atlaskit/icon": "^21.9.0",
+    "@atlaskit/progress-indicator": "^9.1.0",
+    "@atlaskit/package-8": "*",
+    "@atlaskit/package-9": "*",
+    "@atlaskit/package-10": "*",
+    "@testing-library/react": "^8.0.1",
+    "@testing-library/react-hooks": "^1.0.4",
+    "raf-stub": "^2.0.1",
+    "react-dom": "^16.8.0",
+    "react-lorem-component": "^0.13.0",
+    "typescript": "3.9.6"
+  },
+  "techstack": {
+    "@atlassian/frontend": {
+      "import-structure": "atlassian-conventions"
+    },
+    "@repo/internal": {
+      "analytics": "analytics-next",
+      "theming": "new-theming-api",
+      "styling": "emotion",
+      "design-system": "v1",
+      "deprecation": "no-deprecated-imports"
+    }
+  }
+}

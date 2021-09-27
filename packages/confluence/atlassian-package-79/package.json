@@ -1,0 +1,79 @@
+{
+  "name": "@atlassian/package-79",
+  "version": "8.0.0",
+  "author": "Atlassian Pty Ltd",
+  "publishConfig": {
+    "registry": "https://packages.atlassian.com/api/npm/npm-remote"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "module:es2019": "dist/es2019/index.js",
+  "types": "dist/types/index.d.ts",
+  "sideEffects": false,
+  "atlaskit:src": "src/index.ts",
+  "af:exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@atlaskit/icon": "^21.9.0",
+    "@atlaskit/theme": "^12.0.0",
+    "@babel/runtime": "^7.0.0",
+    "@emotion/core": "^10.0.9",
+    "@emotion/styled": "^10.0.7",
+    "@visx/curve": "^1.7.0",
+    "@visx/group": "^1.7.0",
+    "@visx/legend": "^1.7.0",
+    "@visx/marker": "^1.7.0",
+    "@visx/responsive": "^1.7.0",
+    "@visx/scale": "^1.7.0",
+    "@visx/shape": "^1.7.0",
+    "@visx/xychart": "^1.7.0",
+    "react-intl": "^2.6.0",
+    "tslib": "^2.0.0"
+  },
+  "peerDependencies": {
+    "@atlaskit/editor-common": ">=60.1.0",
+    "@atlaskit/editor-core": ">=150.0.0",
+    "@atlassian/package-128": ">=1.4.1",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "react-spring": "^8.0.27"
+  },
+  "devDependencies": {
+    "@atlaskit/package-2": "*",
+    "@atlaskit/code": "*",
+    "@atlaskit/docs": "*",
+    "@atlaskit/editor-core": "*",
+    "@atlaskit/select": "*",
+    "@atlaskit/package-8": "*",
+    "@atlaskit/package-9": "*",
+    "@atlaskit/package-10": "*",
+    "@testing-library/react": "^8.0.1",
+    "@types/globalize": "^1.5.1",
+    "cldr-core": "^39.0.0",
+    "cldr-numbers-modern": "^39.0.0",
+    "globalize": "^1.6.0",
+    "styled-components": "^3.2.6",
+    "typescript": "3.9.6",
+    "wait-for-expect": "^1.2.0"
+  },
+  "techstack": {
+    "@atlassian/frontend": {
+      "import-structure": [
+        "atlassian-conventions"
+      ],
+      "circular-dependencies": [
+        "file-and-folder-level"
+      ]
+    },
+    "@repo/internal": {
+      "analytics": [
+        "analytics-next"
+      ],
+      "deprecation": [
+        "no-deprecated-imports"
+      ]
+    }
+  }
+}

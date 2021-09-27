@@ -1,0 +1,14 @@
+{
+  "name": "trace-viewer",
+  "version": "1.0.0",
+  "private": true,
+  "browserslist": [
+    "last 2 Chrome versions",
+    "last 2 Safari Versions",
+    "last 2 Firefox Versions"
+  ],
+  "dependencies": {},
+  "resolutions": {},
+  "devDependencies": {},
+  "peerDependencies": {}
+}

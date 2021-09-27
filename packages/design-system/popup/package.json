@@ -1,0 +1,73 @@
+{
+  "name": "@atlaskit/popup",
+  "version": "1.1.4",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "license": "Apache-2.0",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "module:es2019": "dist/es2019/index.js",
+  "types": "dist/types/index.d.ts",
+  "sideEffects": false,
+  "atlaskit:src": "src/index.ts",
+  "af:exports": {
+    ".": "./src/index.ts",
+    "./types": "./src/types.ts"
+  },
+  "dependencies": {
+    "@atlaskit/popper": "^5.0.0",
+    "@atlaskit/portal": "^4.0.0",
+    "@atlaskit/theme": "^12.0.0",
+    "@atlaskit/tokens": "^0.2.0",
+    "@babel/runtime": "^7.0.0",
+    "@emotion/core": "^10.0.9",
+    "bind-event-listener": "^1.0.2",
+    "focus-trap": "^2.4.5"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "devDependencies": {
+    "@atlaskit/package-2": "*",
+    "@atlaskit/button": "^16.1.0",
+    "@atlaskit/docs": "*",
+    "@atlaskit/icon": "^21.9.0",
+    "@atlaskit/menu": "^1.0.0",
+    "@atlaskit/radio": "^5.3.0",
+    "@atlaskit/select": "^15.0.0",
+    "@atlaskit/spinner": "^15.1.0",
+    "@atlaskit/package-8": "*",
+    "@atlaskit/package-9": "*",
+    "@testing-library/dom": "^7.7.3",
+    "@testing-library/react": "^8.0.1",
+    "ast-types": "^0.13.3",
+    "jest-axe": "^4.0.0",
+    "jscodeshift": "^0.13.0",
+    "raf-stub": "^2.0.1",
+    "react-dom": "^16.8.0",
+    "storybook-addon-performance": "^0.16.0",
+    "typescript": "3.9.6",
+    "wait-for-expect": "^1.2.0"
+  },
+  "keywords": [
+    "atlaskit",
+    "react",
+    "ui"
+  ],
+  "techstack": {
+    "@atlassian/frontend": {
+      "import-structure": "atlassian-conventions"
+    },
+    "@repo/internal": {
+      "ui-components": "lite-mode",
+      "analytics": "analytics-next",
+      "theming": "tokens",
+      "deprecation": "no-deprecated-imports",
+      "styling": "emotion"
+    }
+  }
+}

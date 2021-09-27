@@ -1,0 +1,40 @@
+{
+  "name": "@atlassian/package-241",
+  "version": "0.4.2",
+  "private": true,
+  "license": "Apache-2.0",
+  "sideEffects": false,
+  "author": "Atlassian Pty Ltd",
+  "dependencies": {
+    "@atlaskit/package-6": "^0.0.5",
+    "@atlassian/package-80": "^5.1.1",
+    "react-dom": "^16.8.0",
+    "react-intl": "^2.6.0"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "babel-loader": "^8.0.2",
+    "copy-webpack-plugin": "^6.4.0",
+    "csp-webpack-plugin": "^2.0.2",
+    "css-loader": "^0.28.0",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.16.1",
+    "webpack": "^4.41.3",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.11.2"
+  }
+}

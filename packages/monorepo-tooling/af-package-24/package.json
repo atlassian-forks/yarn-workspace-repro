@@ -1,0 +1,39 @@
+{
+  "name": "@af/package-24",
+  "version": "0.0.6",
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "sideEffects": false,
+  "private": true,
+  "af:exports": {
+    "./babel-plugin": "./src/babel-plugin.ts",
+    "./babel-preset": "./src/babel-preset.ts",
+    "./cognize-cli": "./src/cognize-cli.ts"
+  },
+  "bin": {
+    "cognize-cli": "./bin/cognize-cli.js"
+  },
+  "dependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/template": "^7.14.5",
+    "pkg-up": "^3.1.0",
+    "tslib": "^2.0.0",
+    "yargs": "^15.3.1"
+  },
+  "peerDependencies": {
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.12.0",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "devDependencies": {
+    "@atlaskit/package-2": "*",
+    "@babel/preset-env": "^7.12.1",
+    "@types/babel-plugin-tester": "^9.0.1",
+    "babel-plugin-tester": "^10.0.0",
+    "ts-node": "^10.0.0"
+  },
+  "engines": {
+    "node": ">=8"
+  }
+}

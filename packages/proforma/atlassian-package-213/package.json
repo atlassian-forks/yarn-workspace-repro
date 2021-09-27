@@ -1,0 +1,74 @@
+{
+  "name": "@atlassian/package-213",
+  "version": "0.5.0",
+  "author": "Atlassian Pty Ltd",
+  "publishConfig": {
+    "registry": "https://packages.atlassian.com/api/npm/npm-remote"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "module:es2019": "dist/es2019/index.js",
+  "types": "dist/types/index.d.ts",
+  "sideEffects": false,
+  "atlaskit:src": "src/index.ts",
+  "af:exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@atlaskit/modal-dialog": "^12.0.0",
+    "@atlassian/package-204": "^0.29.0",
+    "@atlassian/package-215": "^0.1.6",
+    "@babel/runtime": "^7.0.0",
+    "lodash": "^4.17.15",
+    "mobx": "^4.15.0",
+    "mobx-react": "^6.1.4",
+    "react-intl": "^2.6.0"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
+  },
+  "devDependencies": {
+    "@af/package-27": "^0.13.0",
+    "@atlaskit/package-2": "*",
+    "@atlaskit/docs": "*",
+    "@atlaskit/package-8": "*",
+    "@atlaskit/package-9": "*",
+    "@atlaskit/package-10": "*",
+    "react-dom": "^16.8.0",
+    "typescript": "3.9.6",
+    "wait-for-expect": "^1.2.0"
+  },
+  "techstackIgnore": {
+    "stricter": [
+      "@atlassian/tangerine/project-structure"
+    ]
+  },
+  "techstack": {
+    "@atlassian/frontend": {
+      "code-structure": [
+        "tangerine-next"
+      ],
+      "import-structure": [
+        "atlassian-conventions"
+      ],
+      "circular-dependencies": [
+        "file-and-folder-level"
+      ]
+    },
+    "@repo/internal": {
+      "analytics": [
+        "analytics-next"
+      ],
+      "theming": [
+        "new-theming-api"
+      ],
+      "ui-components": [
+        "lite-mode"
+      ],
+      "deprecation": [
+        "no-deprecated-imports"
+      ]
+    }
+  }
+}

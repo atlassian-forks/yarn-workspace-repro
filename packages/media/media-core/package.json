@@ -1,0 +1,42 @@
+{
+  "name": "@atlaskit/media-core",
+  "version": "32.2.0",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "license": "Apache-2.0",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "module:es2019": "dist/es2019/index.js",
+  "types": "dist/types/index.d.ts",
+  "atlaskit:src": "src/index.ts",
+  "af:exports": {
+    "./auth": "./src/auth.ts",
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.0.0",
+    "eventemitter2": "^4.1.0",
+    "lru-fast": "^0.2.2"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "rxjs": "^5.5.0"
+  },
+  "devDependencies": {
+    "@atlaskit/package-2": "*",
+    "@atlaskit/button": "^16.0.0",
+    "@atlaskit/docs": "^9.0.0",
+    "@atlaskit/media-card": "^71.0.0",
+    "@atlaskit/media-common": "^2.7.0",
+    "@atlaskit/media-test-helpers": "^28.8.0",
+    "@atlaskit/package-8": "*",
+    "react-dom": "^16.8.0",
+    "rxjs": "^5.5.0",
+    "styled-components": "^3.2.6",
+    "typescript": "3.9.6",
+    "wait-for-expect": "^1.2.0"
+  }
+}

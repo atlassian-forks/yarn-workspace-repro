@@ -1,0 +1,31 @@
+{
+  "name": "@atlassian/package-231",
+  "version": "0.9.10",
+  "publishConfig": {
+    "registry": "https://packages.atlassian.com/api/npm/npm-remote"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "main": "src/index.js",
+  "sideEffects": false,
+  "bin": {
+    "techstack": "./bin/cli.js"
+  },
+  "dependencies": {
+    "chalk": "^2.1.0",
+    "escape-string-regexp": "^1.0.5",
+    "glob-to-regexp": "^0.4.1",
+    "lodash": "^4.17.15",
+    "node-cache": "^5.0.1"
+  },
+  "techstack": {
+    "@atlassian/frontend": {
+      "import-structure": "atlassian-conventions"
+    }
+  },
+  "devDependencies": {
+    "inquirer": "^6.4.0",
+    "meow": "^6.0.0"
+  },
+  "peerDependencies": {}
+}

@@ -1,0 +1,11 @@
+{
+  "name": "@atlaskit/package-26",
+  "version": "6.0.0",
+  "private": true,
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "license": "Apache-2.0",
+  "dependencies": {},
+  "devDependencies": {},
+  "peerDependencies": {}
+}

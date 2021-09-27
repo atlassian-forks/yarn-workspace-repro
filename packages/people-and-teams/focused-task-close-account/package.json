@@ -1,0 +1,52 @@
+{
+  "name": "@atlaskit/focused-task-close-account",
+  "version": "0.14.5",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "license": "Apache-2.0",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "module:es2019": "dist/es2019/index.js",
+  "types": "dist/types/index.d.ts",
+  "atlaskit:src": "src/index.ts",
+  "af:exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@atlaskit/avatar": "^20.5.0",
+    "@atlaskit/button": "^16.0.0",
+    "@atlaskit/drawer": "^7.0.0",
+    "@atlaskit/icon": "^21.9.0",
+    "@atlaskit/inline-dialog": "^13.0.0",
+    "@atlaskit/section-message": "^6.0.0",
+    "@atlaskit/theme": "^12.0.0",
+    "@babel/runtime": "^7.0.0"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "react-intl": "^2.6.0",
+    "react-transition-group": "^4.4.1",
+    "styled-components": "^3.2.6"
+  },
+  "devDependencies": {
+    "@atlaskit/checkbox": "^12.0.0",
+    "@atlaskit/docs": "*",
+    "enzyme": "^3.10.0",
+    "react-intl": "^2.6.0",
+    "typescript": "3.9.6"
+  },
+  "keywords": [
+    "ui",
+    "gdpr",
+    "right",
+    "erasure",
+    "forgotten",
+    "focusedTaskCloseAccount",
+    "deleteUserDrawer",
+    "deactivateUserDrawer"
+  ]
+}

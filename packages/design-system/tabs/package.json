@@ -1,0 +1,64 @@
+{
+  "name": "@atlaskit/tabs",
+  "version": "13.2.2",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "license": "Apache-2.0",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "module:es2019": "dist/es2019/index.js",
+  "types": "dist/types/index.d.ts",
+  "sideEffects": false,
+  "atlaskit:src": "src/index.ts",
+  "dependencies": {
+    "@atlaskit/analytics-next": "^8.2.0",
+    "@atlaskit/codemod-utils": "^3.4.0",
+    "@atlaskit/theme": "^12.0.0",
+    "@atlaskit/tokens": "^0.2.0",
+    "@babel/runtime": "^7.0.0",
+    "@emotion/core": "^10.0.9"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
+  },
+  "devDependencies": {
+    "@atlaskit/package-2": "*",
+    "@atlaskit/button": "^16.1.0",
+    "@atlaskit/docs": "*",
+    "@atlaskit/section-message": "^6.1.0",
+    "@atlaskit/spinner": "^15.1.0",
+    "@atlaskit/package-8": "*",
+    "@atlaskit/tooltip": "^17.5.0",
+    "@atlaskit/package-9": "*",
+    "@atlaskit/package-10": "*",
+    "@testing-library/react": "^8.0.1",
+    "enzyme": "^3.10.0",
+    "jscodeshift": "^0.13.0",
+    "react-dom": "^16.8.0",
+    "react-lorem-component": "^0.13.0",
+    "storybook-addon-performance": "^0.16.0",
+    "typescript": "3.9.6",
+    "wait-for-expect": "^1.2.0"
+  },
+  "techstack": {
+    "@atlassian/frontend": {
+      "import-structure": "atlassian-conventions"
+    },
+    "@repo/internal": {
+      "ui-components": "lite-mode",
+      "analytics": "analytics-next",
+      "theming": "tokens",
+      "styling": "emotion",
+      "deprecation": "no-deprecated-imports"
+    }
+  },
+  "af:exports": {
+    ".": "./src/index.ts",
+    "./types": "./src/types.ts",
+    "./hooks": "./src/hooks.ts"
+  },
+  "homepage": "https://atlassian.design/components/tabs/"
+}

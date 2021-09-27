@@ -1,0 +1,53 @@
+{
+  "name": "@atlassian/package-17",
+  "version": "0.7.17",
+  "publishConfig": {
+    "registry": "https://packages.atlassian.com/api/npm/npm-remote"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "module:es2019": "dist/es2019/index.js",
+  "types": "dist/types/index.d.ts",
+  "sideEffects": false,
+  "atlaskit:src": "src/index.ts",
+  "dependencies": {
+    "@atlaskit/button": "16.1.2",
+    "@atlaskit/dynamic-table": "14.3.2",
+    "@atlaskit/icon": "^21.9.0",
+    "@atlaskit/inline-dialog": "^13.1.5",
+    "@atlaskit/lozenge": "11.1.2",
+    "@atlaskit/popup": "1.1.4",
+    "@atlaskit/tag": "11.2.0",
+    "@atlaskit/tag-group": "10.0.10",
+    "@atlaskit/theme": "^12.0.0",
+    "@atlaskit/tooltip": "17.5.0",
+    "@atlassian/package-16": "^0.12.0",
+    "@babel/runtime": "^7.0.0",
+    "@formatjs/intl-utils": "^3.8.4",
+    "react-intl-next": "npm:react-intl@^5.18.1",
+    "react-use-clipboard": "^1.0.0"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "styled-components": "^3.2.6"
+  },
+  "devDependencies": {
+    "@atlaskit/docs": "*",
+    "@atlaskit/package-9": "*",
+    "@storybook/react": "^6.0.0-alpha.19",
+    "enzyme": "^3.10.0",
+    "react-test-renderer": "^16.8.0",
+    "typescript": "3.9.6"
+  },
+  "techstack": {
+    "@atlassian/frontend": {
+      "import-structure": "atlassian-conventions"
+    }
+  },
+  "af:exports": {
+    ".": "./src/index.ts"
+  }
+}

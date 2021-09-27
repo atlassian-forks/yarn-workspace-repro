@@ -1,0 +1,58 @@
+{
+  "name": "@atlaskit/css-reset",
+  "version": "6.1.4",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "license": "Apache-2.0",
+  "main": "dist/bundle.css",
+  "module": "dist/bundle.css",
+  "module:es2019": "dist/bundle.css",
+  "types": "dist/types/index.d.ts",
+  "atlaskit:src": "src/index.tsx",
+  "atlaskit:designLink": "https://atlassian.design/guidelines/product/overview",
+  "af:exports": {
+    ".": "./src/index.tsx",
+    "./accessibility": "./src/accessibility.tsx",
+    "./base": "./src/base.tsx",
+    "./browser-fixes": "./src/browser-fixes.tsx",
+    "./reset": "./src/reset.tsx",
+    "./tables": "./src/tables.tsx",
+    "./utils": "./src/utils.tsx"
+  },
+  "dependencies": {
+    "@atlaskit/theme": "^12.0.0",
+    "@atlaskit/tokens": "^0.2.0",
+    "@babel/runtime": "^7.0.0",
+    "fbjs": "^3.0.0"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
+  },
+  "devDependencies": {
+    "@atlaskit/docs": "*",
+    "@atlaskit/package-9": "*",
+    "mkdirp": "^0.5.1",
+    "ts-node": "^10.0.0",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "3.9.6"
+  },
+  "keywords": [
+    "atlaskit",
+    "css",
+    "ui"
+  ],
+  "techstack": {
+    "@atlassian/frontend": {
+      "import-structure": "atlassian-conventions"
+    },
+    "@repo/internal": {
+      "design-system": "v1",
+      "ui-components": "lite-mode",
+      "theming": "tokens",
+      "deprecation": "no-deprecated-imports"
+    }
+  }
+}

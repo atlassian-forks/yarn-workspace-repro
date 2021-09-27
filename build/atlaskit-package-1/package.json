@@ -1,0 +1,27 @@
+{
+  "name": "@atlaskit/package-1",
+  "version": "1.0.2",
+  "main": "index.js",
+  "types": "./src/index.ts",
+  "private": true,
+  "af:exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@af/package-11": "*",
+    "@atlaskit/package-2": "*",
+    "axios": "^0.21.1",
+    "command-line-args": "^5.1.1",
+    "command-line-commands": "^3.0.1",
+    "command-line-usage": "^6.1.0",
+    "enhanced-resolve": "3.4.1",
+    "js-yaml": "^3.13.1",
+    "ts-node": "^10.0.0",
+    "uuid": "^3.1.0",
+    "webpack": "^4.41.3"
+  },
+  "devDependencies": {
+    "@types/enhanced-resolve": "^3.0.6"
+  },
+  "peerDependencies": {}
+}

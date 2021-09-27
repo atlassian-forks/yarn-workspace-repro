@@ -1,0 +1,36 @@
+{
+  "name": "@atlaskit/editor-markdown-transformer",
+  "version": "4.2.0",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "license": "MIT",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "module:es2019": "dist/es2019/index.js",
+  "types": "dist/types/index.d.ts",
+  "sideEffects": false,
+  "atlaskit:src": "src/index.ts",
+  "dependencies": {
+    "@atlaskit/adf-schema": "^19.2.0",
+    "@atlaskit/editor-common": "^60.1.0",
+    "@babel/runtime": "^7.0.0",
+    "markdown-it": "^10.0.0",
+    "markdown-it-table": "^2.0.4",
+    "prosemirror-markdown": "^1.4.2",
+    "prosemirror-model": "1.11.0"
+  },
+  "peerDependencies": {
+    "styled-components": "^3.2.6"
+  },
+  "devDependencies": {
+    "@atlaskit/docs": "*",
+    "@atlaskit/editor-core": "^150.0.0",
+    "@atlaskit/package-16": "^15.4.0",
+    "@atlaskit/util-data-test": "^16.0.0",
+    "react": "^16.8.0",
+    "typescript": "3.9.6"
+  }
+}

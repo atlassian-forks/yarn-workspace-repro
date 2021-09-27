@@ -1,0 +1,36 @@
+{
+  "name": "@atlaskit/package-21",
+  "version": "2.5.4",
+  "private": true,
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "license": "Apache-2.0",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
+  "atlaskit:src": "src/index.ts",
+  "af:exports": {
+    ".": "./src/index.ts",
+    "./card-client": "./src/integration/smart-links-mock-client-utils.ts",
+    "./embed-helper": "./src/integration/embed-helper.tsx",
+    "./media-embed-html-source": "./src/integration/media-embed-html-source.tsx"
+  },
+  "dependencies": {
+    "@atlaskit/media-card": "^71.0.0",
+    "@atlaskit/media-test-helpers": "^28.8.0",
+    "@atlaskit/media-ui": "^17.0.0",
+    "@atlaskit/smart-card": "^16.1.0",
+    "@atlaskit/package-9": "*",
+    "@atlaskit/package-10": "*",
+    "@babel/runtime": "^7.0.0",
+    "json-ld-types": "2.3.0",
+    "uuid": "^3.1.0"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "devDependencies": {
+    "typescript": "3.9.6"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@atlaskit/package-15",
+  "version": "0.5.3",
+  "private": true,
+  "dependencies": {
+    "@atlaskit/package-2": "*",
+    "@changesets/apply-release-plan": "^4.2.0",
+    "@changesets/config": "^1.5.0",
+    "@changesets/get-release-plan": "^2.0.0",
+    "@changesets/types": "^3.2.0",
+    "@manypkg/get-packages": "^1.0.1",
+    "bolt": "^0.24.8",
+    "chalk": "^2.1.0",
+    "fs-extra": "^4.0.2",
+    "meow": "^6.0.0",
+    "node-fetch": "^2.6.1",
+    "p-limit": "^2.2.1",
+    "simple-git": "^1.130.0",
+    "ts-node": "^10.0.0",
+    "typescript": "3.9.6"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.14",
+    "@types/node": "~12.0.12"
+  },
+  "peerDependencies": {}
+}

@@ -1,0 +1,29 @@
+{
+  "name": "@atlaskit/analytics-viewer",
+  "version": "0.4.5",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "license": "Apache-2.0",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "module:es2019": "dist/es2019/index.js",
+  "types": "dist/types/index.d.ts",
+  "atlaskit:src": "src/index.ts",
+  "config": {
+    "access": "private"
+  },
+  "dependencies": {
+    "@atlaskit/analytics-next": "^8.0.0",
+    "@babel/runtime": "^7.0.0",
+    "styled-components": "^3.2.6"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
+  },
+  "devDependencies": {
+    "typescript": "3.9.6"
+  }
+}

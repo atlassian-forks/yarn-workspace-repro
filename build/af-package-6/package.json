@@ -1,0 +1,27 @@
+{
+  "name": "@af/package-6",
+  "version": "1.0.9",
+  "private": true,
+  "dependencies": {
+    "@af/package-3": "^1.0.0",
+    "@af/package-5": "^1.0.0",
+    "@atlaskit/package-1": "^1.0.1",
+    "@atlaskit/package-2": "*",
+    "@atlaskit/package-9": "^0.7.0",
+    "@atlaskit/package-10": "^0.18.0",
+    "bolt": "^0.24.8",
+    "jest": "^26.4.2",
+    "json5": "^2.1.0",
+    "lodash": "^4.17.15",
+    "meow": "^6.0.0",
+    "p-limit": "^2.2.1",
+    "spawndamnit": "^1.0.0"
+  },
+  "devDependencies": {
+    "@jest/test-result": "^26.6.2",
+    "fs-extra": "^4.0.2",
+    "rimraf": "^2.6.3",
+    "ts-node": "^10.0.0"
+  },
+  "peerDependencies": {}
+}

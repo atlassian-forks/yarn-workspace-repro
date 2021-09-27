@@ -1,0 +1,9 @@
+{
+  "name": "@af/package-4",
+  "version": "1.0.1",
+  "private": true,
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {},
+  "peerDependencies": {}
+}

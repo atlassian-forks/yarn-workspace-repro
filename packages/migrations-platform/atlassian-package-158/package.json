@@ -1,0 +1,69 @@
+{
+  "name": "@atlassian/package-158",
+  "version": "2.1.2",
+  "author": "Atlassian Pty Ltd",
+  "publishConfig": {
+    "registry": "https://packages.atlassian.com/api/npm/npm-remote"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "module:es2019": "dist/es2019/index.js",
+  "types": "dist/types/index.d.ts",
+  "sideEffects": false,
+  "atlaskit:src": "src/index.ts",
+  "af:exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@atlaskit/checkbox": "^12.2.0",
+    "@atlaskit/dropdown-menu": "^10.1.2",
+    "@atlaskit/dynamic-table": "^14.1.4",
+    "@atlaskit/icon": "^21.9.0",
+    "@atlaskit/pagination": "^14.0.0",
+    "@atlaskit/select": "^15.0.0",
+    "@atlaskit/theme": "^12.0.0",
+    "@atlaskit/tooltip": "^17.5.0",
+    "@atlassian/package-151": "^2.0.0",
+    "@babel/runtime": "^7.0.0",
+    "@emotion/styled": "^10.0.7"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-intl": "^2.6.0",
+    "styled-components": "^3.2.6"
+  },
+  "devDependencies": {
+    "@atlaskit/docs": "*",
+    "@storybook/addon-actions": "^5.2.5",
+    "@testing-library/react": "^8.0.1",
+    "@testing-library/user-event": "10.4.0"
+  },
+  "techstack": {
+    "@atlassian/frontend": {
+      "code-structure": [
+        "tangerine-next"
+      ],
+      "import-structure": [
+        "atlassian-conventions"
+      ],
+      "circular-dependencies": [
+        "file-and-folder-level"
+      ]
+    },
+    "@repo/internal": {
+      "analytics": [
+        "analytics-next"
+      ],
+      "theming": [
+        "new-theming-api"
+      ],
+      "ui-components": [
+        "lite-mode"
+      ],
+      "deprecation": [
+        "no-deprecated-imports"
+      ]
+    }
+  }
+}

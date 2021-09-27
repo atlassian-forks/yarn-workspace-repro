@@ -1,0 +1,37 @@
+{
+  "name": "@atlassian/package-203",
+  "version": "3.0.0",
+  "keywords": [],
+  "publishConfig": {
+    "registry": "https://packages.atlassian.com/api/npm/npm-remote"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "module:es2019": "dist/es2019/index.js",
+  "atlaskit:src": "src/index.ts",
+  "af:exports": {
+    ".": "./src/index.ts",
+    "./babel": "./src/babel.ts",
+    "./cypress": "./src/cypress/index.ts",
+    "./global": "./src/global/index.ts",
+    "./storybook": "./src/storybook/index.ts"
+  },
+  "dependencies": {
+    "@babel/core": "^7.12.3",
+    "@storybook/addons": "^6.1.11",
+    "react-console": "^1.0.0-rc.2",
+    "react-reconciler": "^0.25.1"
+  },
+  "devDependencies": {
+    "@types/node": "~12.0.12",
+    "@types/react": "^16.8.0",
+    "@types/react-reconciler": "^0.18.0",
+    "@types/storybook__addons": "^5.2.1",
+    "typescript": "3.9.6"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
+  }
+}

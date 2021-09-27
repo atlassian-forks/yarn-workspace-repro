@@ -1,0 +1,73 @@
+{
+  "name": "@atlaskit/profilecard",
+  "version": "15.6.2",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": "https://bitbucket.org/atlassian/atlassian-frontend",
+  "author": "Atlassian Pty Ltd",
+  "license": "Apache-2.0",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "module:es2019": "dist/es2019/index.js",
+  "types": "dist/types/index.d.ts",
+  "atlaskit:src": "src/index.ts",
+  "af:exports": {
+    "./client": "./src/client/index.ts",
+    "./messages": "./src/messages.ts",
+    "./team": "./src/components/Team/index.ts",
+    "./types": "./src/types.ts",
+    "./user": "./src/components/User/index.ts",
+    ".": "./src/index.ts"
+  },
+  "config": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@atlaskit/analytics-next": "^8.2.0",
+    "@atlaskit/avatar": "^20.5.0",
+    "@atlaskit/avatar-group": "^8.3.0",
+    "@atlaskit/button": "^16.0.0",
+    "@atlaskit/icon": "^21.9.0",
+    "@atlaskit/lozenge": "^11.0.0",
+    "@atlaskit/menu": "^1.0.0",
+    "@atlaskit/popup": "^1.1.0",
+    "@atlaskit/spinner": "^15.0.0",
+    "@atlaskit/theme": "^12.0.0",
+    "@babel/runtime": "^7.0.0",
+    "date-fns": "^2.17.0",
+    "lru-fast": "^0.2.2"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "react-intl": "^2.6.0",
+    "styled-components": "^3.2.6"
+  },
+  "devDependencies": {
+    "@atlaskit/docs": "*",
+    "@atlaskit/dynamic-table": "^14.2.0",
+    "@atlaskit/inline-edit": "^12.0.0",
+    "@atlaskit/select": "^15.0.0",
+    "@atlaskit/util-data-test": "^16.0.0",
+    "@testing-library/react": "^8.0.1",
+    "enzyme": "^3.10.0",
+    "es6-promise": "^4.0.5",
+    "fetch-mock": "^8.0.0",
+    "loader-utils": "^1.1.0",
+    "lodash": "^4.17.15",
+    "react-router-dom": "^4.2.2",
+    "sinon": "^2.2.0",
+    "typescript": "3.9.6",
+    "uid": "^0.0.2"
+  },
+  "keywords": [
+    "ui",
+    "profilecard"
+  ],
+  "techstack": {
+    "@atlassian/frontend": {
+      "import-structure": "atlassian-conventions"
+    }
+  }
+}
